@@ -1,0 +1,24 @@
+7zip/7z1604-x64.msi:
+  size: 1668096
+  object_id: bedc5852-10af-44ee-6899-40a6d24283d7
+  sha: bae316e5148d3b42efa1d3f272afc10d3ffa6f4b
+cmake/cmake-3.8.0-rc2-win64-x64.zip:
+  size: 25615806
+  object_id: 723cc335-e647-46bf-631a-d81135fdcb3d
+  sha: dd65bc4af74bb019056dc2d9dcaa4d079f3a0abd
+git/Git-2.13.0-64-bit.exe:
+  size: 37156256
+  object_id: f5373af5-252d-41ff-63c1-a2f60ad1846e
+  sha: e1d7c6e5e16acaf3c108064a2ed158f604fa29a7
+golang/go1.8.3.windows-amd64.zip:
+  size: 96254597
+  object_id: a590b969-49df-4710-727e-216119495cec
+  sha: 8a539ecd86505aca6e70e7e561a2b5877d91c000
+mingw/x86_64-7.1.0-release-win32-seh-rt_v5-rev0.7z:
+  size: 46744190
+  object_id: eb813e6b-47c2-40f3-6065-8d502babe4b6
+  sha: a07d2a45cf5c062e3dadc4f8c255be4493054f24
+ruby/ruby-2.3.3-x64.exe:
+  size: 19668866
+  object_id: 331c4055-4638-4076-5e25-4c22217c5c55
+  sha: 83ae5e6282a2b7e21bb61c5b4d1b184c33edbd2a

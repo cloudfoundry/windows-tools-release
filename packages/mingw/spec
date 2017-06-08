@@ -1,0 +1,8 @@
+---
+name: mingw
+
+dependencies:
+- 7zip
+
+files:
+- mingw/x86_64-*.7z

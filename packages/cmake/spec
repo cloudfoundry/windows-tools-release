@@ -1,0 +1,7 @@
+---
+name: cmake
+
+dependencies: []
+
+files:
+- cmake/cmake-*.zip

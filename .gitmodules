@@ -1,0 +1,6 @@
+[submodule "src/github.com/hashicorp/packer"]
+	path = src/github.com/hashicorp/packer
+	url = git@github.com:greenhouse-org/packer
+[submodule "src/golang.org/x/tools"]
+	path = src/golang.org/x/tools
+	url = https://go.googlesource.com/tools

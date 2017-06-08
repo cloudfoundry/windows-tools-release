@@ -1,0 +1,7 @@
+$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$BOSH_INSTALL_TARGET = Resolve-Path "$env:BOSH_INSTALL_TARGET"
+$EXE_PATH = Join-Path $BOSH_INSTALL_TARGET "ruby.exe"
+$path=(Get-ChildItem "ruby/ruby-*.exe").FullName
+Copy-Item -Path $path -Destination ${EXE_PATH} -Force

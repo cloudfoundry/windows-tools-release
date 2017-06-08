@@ -1,0 +1,7 @@
+---
+name: 7zip
+
+dependencies: []
+
+files:
+- 7zip/7z*.msi

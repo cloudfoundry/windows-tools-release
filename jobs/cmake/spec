@@ -1,0 +1,8 @@
+---
+name: cmake
+description: "This is a job that installs cmake"
+templates:
+  pre-start.ps1: bin/pre-start.ps1
+
+packages:
+- cmake
