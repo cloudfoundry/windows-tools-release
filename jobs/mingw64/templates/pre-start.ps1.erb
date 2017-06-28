@@ -1,0 +1,7 @@
+﻿$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$OldPath=(Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).Path
+$AddedFolder="C:\var\vcap\packages\mingw64\mingw64\bin"
+$NewPath=$AddedFolder+';'+$OldPath
+Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH -Value $newPath

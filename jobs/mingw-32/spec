@@ -1,8 +1,0 @@
----
-name: mingw-32
-description: "This is a job that installs mingw 32bit"
-
-packages:
-- 7zip
-- mingw
-

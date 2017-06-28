@@ -1,5 +1,5 @@
 ---
-name: mingw
+name: mingw64
 
 dependencies:
 - 7zip

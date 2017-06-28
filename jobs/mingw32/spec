@@ -1,0 +1,9 @@
+---
+name: mingw32
+description: "This is a job that installs mingw 32bit"
+templates:
+  pre-start.ps1.erb: bin/pre-start.ps1
+
+packages:
+- mingw32
+

@@ -1,0 +1,8 @@
+---
+name: mingw32
+
+dependencies:
+- 7zip
+
+files:
+- mingw/i686-*.7z

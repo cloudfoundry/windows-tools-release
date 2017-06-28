@@ -1,0 +1,9 @@
+---
+name: mingw64
+description: "This is a job that installs mingw 64bit"
+templates:
+  pre-start.ps1.erb: bin/pre-start.ps1
+
+packages:
+- mingw64
+
