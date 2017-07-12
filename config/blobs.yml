@@ -16,6 +16,7 @@ golang/go1.8.3.windows-amd64.zip:
   sha: 8a539ecd86505aca6e70e7e561a2b5877d91c000
 mingw/i686-7.1.0-release-win32-dwarf-rt_v5-rev0.7z:
   size: 49124723
+  object_id: 305f0e29-7d94-4996-56d9-93ee7ad79070
   sha: f7756fc4d134215a7fbb34a09c7b706c72f005d0
 mingw/x86_64-7.1.0-release-win32-seh-rt_v5-rev0.7z:
   size: 46744190
