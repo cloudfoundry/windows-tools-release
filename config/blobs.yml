@@ -10,10 +10,10 @@ git/Git-2.13.0-64-bit.exe:
   size: 37156256
   object_id: f5373af5-252d-41ff-63c1-a2f60ad1846e
   sha: e1d7c6e5e16acaf3c108064a2ed158f604fa29a7
-golang/go1.8.3.windows-amd64.zip:
-  size: 96254597
-  object_id: a590b969-49df-4710-727e-216119495cec
-  sha: 8a539ecd86505aca6e70e7e561a2b5877d91c000
+golang/go1.9.windows-amd64.zip:
+  size: 109276513
+  object_id: 997db75a-12e2-4507-4535-73f3e7d204ea
+  sha: 9f2f0cd3b98c7cab0ed5c55aaa6689e8da754f65
 mingw/i686-7.1.0-release-win32-dwarf-rt_v5-rev0.7z:
   size: 49124723
   object_id: 305f0e29-7d94-4996-56d9-93ee7ad79070
