@@ -2,6 +2,10 @@
   size: 1668096
   object_id: bedc5852-10af-44ee-6899-40a6d24283d7
   sha: bae316e5148d3b42efa1d3f272afc10d3ffa6f4b
+bosh-cli/bosh-cli-2.0.40-windows-amd64.exe:
+  size: 27397632
+  object_id: 80961a4c-7921-4c24-77e1-71ae9ee5ccc5
+  sha: fffd495e33258dd68bd8b7f92f3d09f25e68f4a4
 cmake/cmake-3.8.0-rc2-win64-x64.zip:
   size: 25615806
   object_id: 723cc335-e647-46bf-631a-d81135fdcb3d

@@ -1,0 +1,7 @@
+---
+name: bosh-cli-windows
+
+dependencies: []
+
+files:
+- bosh-cli/bosh-cli-*-windows-amd64.exe

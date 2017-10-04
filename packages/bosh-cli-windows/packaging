@@ -1,0 +1,6 @@
+$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
+$path=(Get-ChildItem "bosh-cli/bosh-cli-*-windows-amd64.exe").FullName
+cp $path "${BOSH_INSTALL_TARGET}/bosh.exe"

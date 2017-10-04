@@ -1,0 +1,10 @@
+---
+name: bosh-cli-windows
+
+templates:
+  pre-start.ps1: bin/pre-start.ps1
+
+packages:
+- bosh-cli-windows
+
+properties: {}
