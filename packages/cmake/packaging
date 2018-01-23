@@ -2,6 +2,12 @@ $ErrorActionPreference = "Stop";
 trap { $host.SetShouldExit(1) }
 
 $ZipFile=$(Get-Item cmake/cmake*.zip).FullName
-Expand-Archive -Path $ZipFile -DestinationPath $env:BOSH_INSTALL_TARGET
+if (Get-Command Expand-Archive -ErrorAction SilentlyContinue) {
+  Expand-Archive -Path $ZipFile -DestinationPath $env:BOSH_INSTALL_TARGET
+} else {
+  Add-Type -AssemblyName System.IO.Compression.FileSystem
+  [System.IO.Compression.ZipFile]::ExtractToDirectory($ZipFile, $env:BOSH_INSTALL_TARGET)
+}
+
 Move-Item -Force $env:BOSH_INSTALL_TARGET/cmake-*/* $env:BOSH_INSTALL_TARGET
 Remove-Item -Force $env:BOSH_INSTALL_TARGET/cmake-*
