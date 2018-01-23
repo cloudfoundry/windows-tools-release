@@ -1,0 +1,7 @@
+---
+name: perl64
+
+dependencies: []
+
+files:
+- perl64/strawberry-perl-*-64bit.msi
