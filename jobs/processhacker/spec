@@ -1,0 +1,10 @@
+---
+name: processhacker
+
+templates:
+  pre-start.ps1: bin/pre-start.ps1
+
+packages:
+- processhacker
+
+properties: {}

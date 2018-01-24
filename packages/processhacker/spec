@@ -1,0 +1,7 @@
+---
+name: processhacker
+
+dependencies: []
+
+files:
+- processhacker/processhacker-*-bin.zip

@@ -30,6 +30,10 @@ mingw/x86_64-7.1.0-release-win32-seh-rt_v5-rev0.7z:
   size: 46744190
   object_id: eb813e6b-47c2-40f3-6065-8d502babe4b6
   sha: a07d2a45cf5c062e3dadc4f8c255be4493054f24
+processhacker/processhacker-2.39-bin.zip:
+  size: 3392412
+  object_id: 52e8388f-8ea2-4a7e-5a38-acc1982023d3
+  sha: 8e8f8423d163d922242b8b7d85427664f77edc97
 ruby/ruby-2.3.3-x64.exe:
   size: 19668866
   object_id: 331c4055-4638-4076-5e25-4c22217c5c55
