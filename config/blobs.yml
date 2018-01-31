@@ -22,10 +22,10 @@ golang/go1.9.3.windows-amd64.zip:
   size: 111172904
   object_id: f602a285-d9a5-434c-6796-ca5b2615db47
   sha: 5ea5bdbfd5a557a2f768c3a67b51fb2159b6132f
-mingw/i686-7.1.0-release-win32-dwarf-rt_v5-rev0.7z:
-  size: 49124723
-  object_id: 305f0e29-7d94-4996-56d9-93ee7ad79070
-  sha: f7756fc4d134215a7fbb34a09c7b706c72f005d0
+mingw/i686-7.2.0-release-win32-dwarf-rt_v5-rev0.7z:
+  size: 44128425
+  object_id: 7abf9665-2e74-4a1d-4b8f-aa090660e60e
+  sha: 4be200a4aa1cb0fab2a40915767321e047b8c043
 mingw/x86_64-7.2.0-release-posix-seh-rt_v5-rev1.7z:
   size: 49044868
   object_id: 973c75b8-b9b7-460a-7c29-2ce0525a598f
