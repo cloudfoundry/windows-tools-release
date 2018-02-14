@@ -26,10 +26,10 @@ mingw/i686-7.2.0-release-win32-dwarf-rt_v5-rev0.7z:
   size: 44128425
   object_id: 7abf9665-2e74-4a1d-4b8f-aa090660e60e
   sha: 4be200a4aa1cb0fab2a40915767321e047b8c043
-mingw/x86_64-7.2.0-release-posix-seh-rt_v5-rev1.7z:
-  size: 49044868
-  object_id: 973c75b8-b9b7-460a-7c29-2ce0525a598f
-  sha: 5472dbfd443e4d33250e1f9387ace1f1098253af
+mingw/x86_64-7.2.0-release-posix-seh-rt_v5-rev0.7z:
+  size: 48975566
+  object_id: 9eda914e-e920-434b-4535-f2c397497817
+  sha: 5e4ca4485384f04399ae0aa06bab509721c50095
 processhacker/processhacker-2.39-bin.zip:
   size: 3392412
   object_id: 52e8388f-8ea2-4a7e-5a38-acc1982023d3
