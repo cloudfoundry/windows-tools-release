@@ -15,3 +15,4 @@ Mostly used to install packages on a Concourse windows-worker
 - [packer](https://www.packer.io/downloads.html)
 - [processhacker](http://processhacker.sourceforge.net/downloads.php)
 - [Ruby](https://rubyinstaller.org/downloads/)
+- [GNU make](http://gnuwin32.sourceforge.net/packages/make.htm)
