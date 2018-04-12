@@ -1,0 +1,8 @@
+---
+name: make
+
+dependencies: []
+
+files:
+ - make/make-*-bin.zip
+ - make-dep/make-*-dep.zip

@@ -1,0 +1,12 @@
+$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
+
+$makePath=(Get-ChildItem "make/make-*-bin.zip").FullName
+$makeDepPath=(Get-ChildItem "make-dep/make-*-dep.zip").FullName
+
+Expand-Archive -Path $makePath -DestinationPath $BOSH_INSTALL_TARGET
+Expand-Archive -Path $makeDepPath -DestinationPath $BOSH_INSTALL_TARGET
+
+Exit 0

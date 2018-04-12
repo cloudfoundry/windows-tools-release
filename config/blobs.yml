@@ -22,6 +22,14 @@ golang/go1.10.windows-amd64.zip:
   size: 131903498
   object_id: 8b38ecd2-d26c-46f8-7bec-1803369ff8f2
   sha: 0b16bc357770b5867df565f80f22842d13d95fd2
+make-dep/make-3.81-dep.zip:
+  size: 708206
+  object_id: 5b796c1a-c554-4ef9-6296-d13053e08024
+  sha: ee90e45c1bacc24a0c3852a95fc6dcfbcabe802b
+make/make-3.81-bin.zip:
+  size: 495645
+  object_id: 4dc3c974-bd26-482e-74ed-dfe774444320
+  sha: 7c1e23a93e6cb78975f36efd22d598241b1f0e8b
 mingw/i686-7.2.0-release-win32-dwarf-rt_v5-rev0.7z:
   size: 44128425
   object_id: 7abf9665-2e74-4a1d-4b8f-aa090660e60e
