@@ -1,0 +1,117 @@
+name: windows-tools
+version: "10"
+commit_hash: 7ddf6f0
+uncommitted_changes: false
+jobs:
+- name: bosh-cli-windows
+  version: d8a44958ca8f71d6aab0276e2dc25350341d8820
+  fingerprint: d8a44958ca8f71d6aab0276e2dc25350341d8820
+  sha1: a8d84c50d0aa63d0badce7f979576ac78736ac9a
+- name: cmake
+  version: 1aa600292ba0cdae4b76a2d2c038483f5d067981
+  fingerprint: 1aa600292ba0cdae4b76a2d2c038483f5d067981
+  sha1: a583c59cceb777ccec3110139ea9838704808631
+- name: docker
+  version: 57d62bbd0a6d4cc2a6fac0fdbe1359b91288227d
+  fingerprint: 57d62bbd0a6d4cc2a6fac0fdbe1359b91288227d
+  sha1: fbfc2c75c511a2fd567a508f2815cc5245ea83a3
+- name: git
+  version: 2936403b79f9923e5a2f9a5bf47042d48485eb81
+  fingerprint: 2936403b79f9923e5a2f9a5bf47042d48485eb81
+  sha1: 06e1425db390c26e9fffded355d14d9ab982f5f4
+- name: golang-windows
+  version: 8c84a39a09d197b3636fb21878fa100b96e4546e
+  fingerprint: 8c84a39a09d197b3636fb21878fa100b96e4546e
+  sha1: 1b2684338df2a341b74a6843e774373e3898f4b3
+- name: make
+  version: 931bb61634f68de3da8da6546777a7c725dfe2f2
+  fingerprint: 931bb61634f68de3da8da6546777a7c725dfe2f2
+  sha1: dd020f4283bd07b23a8278ef6815dac14aa05974
+- name: mingw32
+  version: 1b606bc108b1d28766abe1396c3b83707eaf1719
+  fingerprint: 1b606bc108b1d28766abe1396c3b83707eaf1719
+  sha1: b5c94ffe5f53cd5018535d74377c0b0cabf60546
+- name: mingw64
+  version: f61ad6695f1f608e926b7e4ce72ae446acba28bb
+  fingerprint: f61ad6695f1f608e926b7e4ce72ae446acba28bb
+  sha1: 2130bd15b2dc8c5894aa3bd9f7b58925eea44a0f
+- name: packer
+  version: 0ff09bb5a1699331fe66cfdf2fe61e15b88be7df
+  fingerprint: 0ff09bb5a1699331fe66cfdf2fe61e15b88be7df
+  sha1: 51dc952741abd6c247053921a36f4893e7b2b0b4
+- name: processhacker
+  version: 8e90a4a904cc8621cb0773ef35df821b25b128bb
+  fingerprint: 8e90a4a904cc8621cb0773ef35df821b25b128bb
+  sha1: 70e333fe40f460a8a30bc65bf596a7fc75825644
+- name: ruby
+  version: 067b3c6185b043fe773a39a94d4daa586c628676
+  fingerprint: 067b3c6185b043fe773a39a94d4daa586c628676
+  sha1: 4f30a0ab9be0e72a68018ef7dd777553e224c44c
+packages:
+- name: 7zip
+  version: c1dc6c69e6d29a7e39752711fa1eeb74c17aac65
+  fingerprint: c1dc6c69e6d29a7e39752711fa1eeb74c17aac65
+  sha1: 05a8e4c6e331f08c67a3d86b98bf0995d95b186d
+  dependencies: []
+- name: bosh-cli-windows
+  version: 376cac22babbfb68ce6bbabf8a4d57849fe0629d
+  fingerprint: 376cac22babbfb68ce6bbabf8a4d57849fe0629d
+  sha1: 308fff9ecdcf7a27f24312e081e64ae22edd5933
+  dependencies: []
+- name: cmake
+  version: 9eee1630f6d7e5e6bcddb44af598f7891e136ab3
+  fingerprint: 9eee1630f6d7e5e6bcddb44af598f7891e136ab3
+  sha1: 5ef417b8346c7fbc8ae3b0873114f6b804be25db
+  dependencies: []
+- name: docker
+  version: 17650c0199bf2959d855aff57ead2cc84440f4c2
+  fingerprint: 17650c0199bf2959d855aff57ead2cc84440f4c2
+  sha1: b38e75b18c7dfa615b3f51720cdbf69948f7c019
+  dependencies: []
+- name: git
+  version: 036d5bd15f7f5257d595ddcd1c4819f32964b089
+  fingerprint: 036d5bd15f7f5257d595ddcd1c4819f32964b089
+  sha1: 34945a0de0681f67a75aca9d2e40c36abac2563a
+  dependencies: []
+- name: golang-windows
+  version: 389e7157947469a8d6a8ee2e47f976e375ee990d
+  fingerprint: 389e7157947469a8d6a8ee2e47f976e375ee990d
+  sha1: 26a6d5104311908ca427de507a42d059a721fbf8
+  dependencies: []
+- name: make
+  version: 1af1d254097ecf69eef414ab040dc1956e2fe221
+  fingerprint: 1af1d254097ecf69eef414ab040dc1956e2fe221
+  sha1: d7108b3b2526f27bb20e86da55cab8b61ed98319
+  dependencies: []
+- name: mingw32
+  version: f1cd2124ecb2a048cac0bc13c3f9918dc2272494
+  fingerprint: f1cd2124ecb2a048cac0bc13c3f9918dc2272494
+  sha1: b471ec22bbd720e1caec75a362f8d042987355c9
+  dependencies:
+  - 7zip
+- name: mingw64
+  version: 1975043d06ef71eb8d9b7bd0b1aa56ac1819eb37
+  fingerprint: 1975043d06ef71eb8d9b7bd0b1aa56ac1819eb37
+  sha1: bf8bb37f2e66caec1a3df3e8efc57020a8adcd20
+  dependencies:
+  - 7zip
+- name: packer
+  version: b92cc0dfb01697b6d89783c81c7d0d823fa3444d
+  fingerprint: b92cc0dfb01697b6d89783c81c7d0d823fa3444d
+  sha1: 99dd2fc1b5d30e7909e5edc6b9e5680db9134f60
+  dependencies:
+  - golang-windows
+- name: processhacker
+  version: 6a09d593b0f7be393a1c45ac557b19125eaeb223
+  fingerprint: 6a09d593b0f7be393a1c45ac557b19125eaeb223
+  sha1: 2458dfe23329d9f25416971a7554363a09ddda72
+  dependencies: []
+- name: ruby
+  version: 3b38d56560ebae5179629890ab4a9674fd6d3e37
+  fingerprint: 3b38d56560ebae5179629890ab4a9674fd6d3e37
+  sha1: 9f8dc8cec620947abb3c171b08443bfc6c1b2b3b
+  dependencies: []
+license:
+  version: cf1f0d135a2254f60977ad8d9e5f50301ac9e891
+  fingerprint: cf1f0d135a2254f60977ad8d9e5f50301ac9e891
+  sha1: 0f5697273181b4bb2d95ffbb2e0446956f5ae138
