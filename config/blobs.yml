@@ -18,10 +18,10 @@ git/Git-2.13.0-64-bit.exe:
   size: 37156256
   object_id: f5373af5-252d-41ff-63c1-a2f60ad1846e
   sha: e1d7c6e5e16acaf3c108064a2ed158f604fa29a7
-golang/go1.10.1.windows-amd64.zip:
-  size: 125488550
-  object_id: 9e3d9611-dc03-4bde-7392-5f634f698066
-  sha: 47818146ee26b0e7d95c06f01f9abaa757bffd4a
+golang/go1.10.3.windows-amd64.zip:
+  size: 139354339
+  object_id: aaa309e6-6495-4696-4e04-e1d1776ae5d4
+  sha: bc3500c018b4265f13913e5cb83cc0ac84334779
 make-dep/make-3.81-dep.zip:
   size: 708206
   object_id: 5b796c1a-c554-4ef9-6296-d13053e08024
