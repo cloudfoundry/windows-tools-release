@@ -6,7 +6,14 @@ $BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
 $makePath=(Get-ChildItem "make/make-*-bin.zip").FullName
 $makeDepPath=(Get-ChildItem "make-dep/make-*-dep.zip").FullName
 
-Expand-Archive -Path $makePath -DestinationPath $BOSH_INSTALL_TARGET
-Expand-Archive -Path $makeDepPath -DestinationPath $BOSH_INSTALL_TARGET
+
+if (Get-Command Expand-Archive -ErrorAction SilentlyContinue) {
+  Expand-Archive -Path $makePath -DestinationPath $BOSH_INSTALL_TARGET
+  Expand-Archive -Path $makeDepPath -DestinationPath $BOSH_INSTALL_TARGET
+} else {
+  Add-Type -AssemblyName System.IO.Compression.FileSystem
+  [System.IO.Compression.ZipFile]::ExtractToDirectory($makePath, ${BOSH_INSTALL_TARGET})
+  [System.IO.Compression.ZipFile]::ExtractToDirectory($makeDepPath, ${BOSH_INSTALL_TARGET})
+}
 
 Exit 0
