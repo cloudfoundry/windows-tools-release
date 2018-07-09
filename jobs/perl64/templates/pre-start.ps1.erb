@@ -7,16 +7,12 @@ if (!$mtx.WaitOne(5000)) {
   throw "Could not acquire PATH mutex"
 }
 
-$PerlRoot='C:\var\vcap\packages\perl64\perl\bin'
-
+$AddedFolder='C:\var\vcap\packages\perl64\perl\bin'
 $OldPath=(Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).Path
 
-if (-not $OldPath.Contains($PerlRoot)) {
-  $AddedFolder="$PerlRoot"
+if (-not $OldPath.Contains($AddedFolder)) {
   $NewPath=$OldPath+';'+$AddedFolder
   Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH -Value $newPath
-
-  Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name GOROOT -Value $GoRoot
 }
 
 $mtx.ReleaseMutex()
