@@ -7,7 +7,7 @@ if (!$mtx.WaitOne(5000)) {
   throw "Could not acquire PATH mutex"
 }
 
-$PerlRoot='C:\var\vcap\packages\perl'
+$PerlRoot='C:\var\vcap\packages\perl64\perl\bin'
 
 $OldPath=(Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).Path
 $AddedFolder="$PerlRoot"
