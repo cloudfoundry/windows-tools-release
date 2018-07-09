@@ -1,1 +1,22 @@
-﻿Write-Host "Installed mingw32"
+﻿$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$installOnPath = [bool]$<%= p("mingw32.install_on_path") %>
+
+if ($installOnPath) {
+  $mtx = New-Object System.Threading.Mutex($false, "PathMutex")
+
+  if (!$mtx.WaitOne(5000)) {
+    throw "Could not acquire PATH mutex"
+  }
+
+  $OldPath=(Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).Path
+  $AddedFolder="C:\var\vcap\packages\mingw32\mingw32\bin"
+
+  if (-not $OldPath.Contains($AddedFolder)) {
+    $NewPath=$OldPath+';'+$AddedFolder
+    Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH -Value $newPath
+  }
+
+  $mtx.ReleaseMutex()
+}

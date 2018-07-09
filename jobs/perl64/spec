@@ -1,0 +1,12 @@
+---
+name: perl64
+description: "This is a job that installs Strawberry Perl 64bit"
+
+templates:
+  pre-start.ps1.erb: bin/pre-start.ps1
+
+packages:
+  - perl64
+
+properties: {}
+
