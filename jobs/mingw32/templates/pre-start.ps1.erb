@@ -1,8 +1,6 @@
 ﻿$ErrorActionPreference = "Stop";
 trap { $host.SetShouldExit(1) }
 
-$Mingw32Root='C:\var\vcap\packages\mingw32\mingw32'
-
 $installOnPath = [bool]$<%= p("mingw32.install_on_path") %>
 
 if ($installOnPath) {
@@ -13,9 +11,12 @@ if ($installOnPath) {
   }
 
   $OldPath=(Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).Path
-  $AddedFolder="$Mingw32Root\bin"
-  $NewPath=$OldPath+';'+$AddedFolder
-  Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH -Value $newPath
+  $AddedFolder="C:\var\vcap\packages\mingw32\mingw32\bin"
+
+  if (-not $OldPath.Contains($AddedFolder)) {
+    $NewPath=$OldPath+';'+$AddedFolder
+    Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH -Value $newPath
+  }
 
   $mtx.ReleaseMutex()
 }
