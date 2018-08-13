@@ -18,6 +18,6 @@ if (-not $OldPath.Contains($AddedFolder)) {
 
 $mtx.ReleaseMutex()
 
-dockerd --register-service
+C:\var\vcap\packages\docker\docker\dockerd --register-service
 Start-Service Docker
 
