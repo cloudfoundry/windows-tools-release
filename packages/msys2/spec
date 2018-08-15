@@ -1,0 +1,8 @@
+---
+name: msys2
+
+dependencies:
+- 7zip
+
+files:
+- msys2/msys2-*.tar.xz

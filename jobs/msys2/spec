@@ -1,0 +1,10 @@
+---
+name: msys2
+
+templates:
+  pre-start.ps1: bin/pre-start.ps1
+
+packages:
+- msys2
+
+properties: {}

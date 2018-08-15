@@ -1,0 +1,7 @@
+---
+name: vc_redist
+
+dependencies: []
+
+files:
+- vc_redist/vc_redist*.zip

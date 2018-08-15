@@ -1,0 +1,7 @@
+---
+name: ninja
+
+dependencies: []
+
+files:
+- ninja/ninja-*.zip

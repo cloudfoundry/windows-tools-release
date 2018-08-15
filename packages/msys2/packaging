@@ -1,0 +1,14 @@
+$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
+$path=(Get-ChildItem "msys2/msys2-*.tar.xz").FullName
+
+$7zip="C:\var\vcap\packages\7zip\7z.exe"
+
+Start-Process -FilePath "$7zip" -ArgumentList "x $path -o$BOSH_INSTALL_TARGET -y" -Wait -NoNewWindow -PassThru
+$tarFile = (Get-ChildItem "$BOSH_INSTALL_TARGET/*.tar").FullName
+tar -xf $tarFile -C $BOSH_INSTALL_TARGET --strip-components=1
+Remove-Item $tarFile
+
+Exit 0

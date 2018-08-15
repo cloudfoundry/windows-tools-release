@@ -8,7 +8,7 @@ Start-Process -FilePath "C:\var\vcap\packages\ruby\ruby.exe" `
 
 $mtx = New-Object System.Threading.Mutex($false, "PathMutex")
 
-if (!$mtx.WaitOne(5000)) {
+if (!$mtx.WaitOne(300000)) {
   throw "Could not acquire PATH mutex"
 }
 

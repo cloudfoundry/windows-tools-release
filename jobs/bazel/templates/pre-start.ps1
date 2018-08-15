@@ -8,7 +8,7 @@ if (!$mtx.WaitOne(300000)) {
 }
 
 $OldPath=(Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).Path
-$AddedFolder="C:\var\vcap\packages\make\bin"
+$AddedFolder="c:\var\vcap\packages\bazel\"
 
 if (-not $OldPath.Contains($AddedFolder)) {
   $NewPath=$OldPath+';'+$AddedFolder

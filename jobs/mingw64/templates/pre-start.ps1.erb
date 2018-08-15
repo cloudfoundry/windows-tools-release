@@ -6,7 +6,7 @@ $installOnPath = [bool]$<%= p("mingw64.install_on_path") %>
 if ($installOnPath) {
   $mtx = New-Object System.Threading.Mutex($false, "PathMutex")
 
-  if (!$mtx.WaitOne(5000)) {
+  if (!$mtx.WaitOne(300000)) {
     throw "Could not acquire PATH mutex"
   }
 

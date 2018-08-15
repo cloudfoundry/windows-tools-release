@@ -1,0 +1,10 @@
+---
+name: vc_redist
+
+templates:
+  pre-start.ps1: bin/pre-start.ps1
+
+packages:
+- vc_redist
+
+properties: {}

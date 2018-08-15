@@ -1,0 +1,10 @@
+---
+name: bazel
+
+templates:
+  pre-start.ps1: bin/pre-start.ps1
+
+packages:
+- bazel
+
+properties: {}
