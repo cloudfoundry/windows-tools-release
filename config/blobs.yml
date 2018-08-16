@@ -70,3 +70,7 @@ vs_buildtools/vs_buildtools-15.zip:
   size: 1078614
   object_id: ff65855c-8484-47cf-6225-70c49276b452
   sha: 08655d1612479b34b42e7b4875774080c519010c
+winpty.tgz:
+  size: 460765
+  object_id: 04aa0cfd-9b12-47b9-4c79-a34990e29802
+  sha: 6bfe1962c47f10c1081410982d06b6eefaeb231c

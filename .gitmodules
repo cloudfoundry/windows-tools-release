@@ -4,3 +4,7 @@
 [submodule "src/golang.org/x/tools"]
 	path = src/golang.org/x/tools
 	url = https://go.googlesource.com/tools
+[submodule "src/code.cloudfoundry.org/diego-ssh"]
+	path = src/code.cloudfoundry.org/diego-ssh
+	url = https://github.com/greenhouse-org/diego-ssh.git
+	branch = dev-box-binary
