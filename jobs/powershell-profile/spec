@@ -1,0 +1,10 @@
+---
+name: powershell-profile
+
+templates:
+  pre-start.ps1: bin/pre-start.ps1
+  powershell-profile.ps1: bin/powershell-profile.ps1
+
+packages: []
+
+properties: {}
