@@ -7,3 +7,7 @@ If (Test-Path "C:\var\vcap\data\golang-windows") {
   $env:GOBIN="C:\var\vcap\data\golang-windows\go\bin"
   $env:PATH+=";$env:GOBIN"
 }
+
+If (!(Test-Path "Z:") -And (Test-Path "\\vmware-host\Shared Folders")) {
+  New-PSDrive -Name Z -PSProvider FileSystem –Root "\\vmware-host\Shared Folders"
+}
