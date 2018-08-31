@@ -58,6 +58,10 @@ processhacker/processhacker-2.39-bin.zip:
   size: 3392412
   object_id: 52e8388f-8ea2-4a7e-5a38-acc1982023d3
   sha: 8e8f8423d163d922242b8b7d85427664f77edc97
+python/python-2.7.15.amd64.msi:
+  size: 20246528
+  object_id: a8134669-d26b-4ef3-4be7-6b7b8c9862f5
+  sha: c097d38d29a894110db278bef3912a2a8f231214
 ruby/ruby-2.3.3-x64.exe:
   size: 19668866
   object_id: 331c4055-4638-4076-5e25-4c22217c5c55

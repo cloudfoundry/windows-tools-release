@@ -1,0 +1,7 @@
+---
+name: python
+
+dependencies: []
+
+files:
+- python/python-*.amd64.msi
