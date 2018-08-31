@@ -1,0 +1,8 @@
+---
+name: ginkgo
+
+dependencies:
+- git
+- golang-windows
+
+files: []

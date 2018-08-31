@@ -9,5 +9,5 @@ If (Test-Path "C:\var\vcap\data\golang-windows") {
 }
 
 If (!(Test-Path "Z:") -And (Test-Path "\\vmware-host\Shared Folders")) {
-  New-PSDrive -Name Z -PSProvider FileSystem –Root "\\vmware-host\Shared Folders"
+  New-PSDrive -Name Z -PSProvider FileSystem –Root "\\vmware-host\Shared Folders" > $null
 }
