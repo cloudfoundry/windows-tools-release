@@ -7,7 +7,7 @@ if (!$mtx.WaitOne(300000)) {
   throw "Could not acquire PATH mutex"
 }
 
-$ssh_home="C:\"
+$ssh_home="c:\var\vcap\data\diego-ssh\"
 $env:HKLM_ENV="HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment"
 $env:SERVICE_WRAPPER_URL="https://github.com/kohsuke/winsw/releases/download/winsw-v2.1.2/WinSW.NET4.exe"
 
@@ -28,6 +28,7 @@ $XML=@"
   <name>sshd</name>
   <description>Start sshd</description>
   <executable>c:\var\vcap\packages\diego-ssh\diego-ssh.exe</executable>
+  <workingdirectory>c:\</workingdirectory>
   <arguments>-authorizedKey="%SSH_AUTHORIZEDKEY%" -address="0.0.0.0:22" -inheritDaemonEnv=true</arguments>
   <logmode>rotate</logmode>
 </service>
