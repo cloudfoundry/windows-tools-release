@@ -1,0 +1,10 @@
+---
+name: vs2017
+
+templates:
+  pre-start.ps1: bin/pre-start.ps1
+
+packages:
+- vs2017
+
+properties: {}
