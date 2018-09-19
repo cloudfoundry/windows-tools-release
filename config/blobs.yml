@@ -62,10 +62,10 @@ python/python-2.7.15.amd64.msi:
   size: 20246528
   object_id: a8134669-d26b-4ef3-4be7-6b7b8c9862f5
   sha: c097d38d29a894110db278bef3912a2a8f231214
-ruby/ruby-2.3.3-x64.exe:
-  size: 19668866
-  object_id: 331c4055-4638-4076-5e25-4c22217c5c55
-  sha: 83ae5e6282a2b7e21bb61c5b4d1b184c33edbd2a
+ruby/ruby-2.5.1-2-x64.exe:
+  size: 9185037
+  object_id: 9449ffbf-dbe9-48dc-5e25-2b5228c6c1f0
+  sha: 225559ef6a0340859dbc801587506a5280019a30
 vc_redist/vc_redist140.zip:
   size: 624988
   object_id: 782e151e-e171-4d45-464f-030216535494
