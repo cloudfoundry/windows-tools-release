@@ -1,10 +1,7 @@
 ---
 name: packer
 
-dependencies:
-  - golang-windows
+dependencies: []
 
 files:
-  - golang.org/x/tools/cmd/stringer/**
-  - github.com/hashicorp/packer/*
-  - github.com/hashicorp/packer/**/*
+    - packer/packer-*.exe
