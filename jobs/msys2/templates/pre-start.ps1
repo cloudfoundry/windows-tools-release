@@ -28,6 +28,7 @@ while (!$done) {
     $done = (Get-Content "c:\var\vcap\packages\msys2\update.log") -match 'there is nothing to do' | Measure-Object | ForEach-Object { $_.Count -eq 2 }
     $done = $done -or ($i -ge 5)
 }
+bash -lc 'pacman --noconfirm -S patch'
 Remove-Item "c:\var\vcap\packages\msys2\update.log" -ea 0
 
 $mtx.ReleaseMutex()
