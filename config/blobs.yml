@@ -2,10 +2,10 @@
   size: 1668096
   object_id: bedc5852-10af-44ee-6899-40a6d24283d7
   sha: bae316e5148d3b42efa1d3f272afc10d3ffa6f4b
-bazel/bazel-0.16.1-fork.zip:
-  size: 160668321
-  object_id: 6f030132-da68-43e9-5810-af76f6147b9c
-  sha: c104d9ee472e070188d675abf41e81a5c05d10fc
+bazel/bazel-0cb04c47147cfa0c5f1a0d17c93f1bc1cfc7c0d7.zip:
+  size: 165859128
+  object_id: 367e9d1d-ce11-4ce5-7334-2f7733047fb9
+  sha: d5c2e3f19e604829e0a4cb48015a384e4c3c4ef5
 bosh-cli/bosh-cli-2.0.40-windows-amd64.exe:
   size: 27397632
   object_id: 80961a4c-7921-4c24-77e1-71ae9ee5ccc5
