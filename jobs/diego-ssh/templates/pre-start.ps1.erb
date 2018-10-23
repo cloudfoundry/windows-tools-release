@@ -16,8 +16,7 @@ Stop-Service sshd
 (Get-WmiObject Win32_Service -filter "name='sshd'").Delete()
 $ErrorActionPreference = "Stop";
 
-Invoke-WebRequest -Uri https://raw.githubusercontent.com/hashicorp/vagrant/master/keys/vagrant.pub -OutFile "$ssh_home\authorized_key" -UseBasicParsing
-$env:SSH_AUTHORIZEDKEY="$(cat $ssh_home\authorized_key)"
+$env:SSH_AUTHORIZEDKEY="<%= p('diego_ssh.public_key') %>"
 Set-ItemProperty -Path "$env:HKLM_ENV" -Name SSH_AUTHORIZEDKEY -Value $env:SSH_AUTHORIZEDKEY
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
@@ -29,7 +28,7 @@ $XML=@"
   <description>Start sshd</description>
   <executable>c:\var\vcap\packages\diego-ssh\diego-ssh.exe</executable>
   <workingdirectory>c:\</workingdirectory>
-  <arguments>-authorizedKey="%SSH_AUTHORIZEDKEY%" -address="0.0.0.0:22" -inheritDaemonEnv=true</arguments>
+  <arguments>-authorizedKey="%SSH_AUTHORIZEDKEY%" -address="0.0.0.0:<%= p('diego_ssh.port') %>" -inheritDaemonEnv=true</arguments>
   <logmode>rotate</logmode>
 </service>
 "@
@@ -49,11 +48,18 @@ if ($LASTEXITCODE -ne 0) {
   exit $LASTEXITCODE
 }
 
-
 "Setting 'sshd' service start type to automatic"
 Set-Service -Name sshd -StartupType Automatic
 
 "Starting 'sshd' service"
 Start-Service -Name sshd
+
+if ((Get-NetFirewallRule | where { $_.DisplayName -eq 'Diego-SSH' }) -eq $null) {
+    "Removing Existing Diego-SSH firewall rule"
+    Remove-NetFirewallRule -DisplayName "Diego-SSH"
+}
+
+"Creating firewall rule for SSH"
+New-NetFirewallRule -Protocol TCP -LocalPort <%= p('diego_ssh.port') %> -Direction Inbound -Action Allow -DisplayName "Diego-SSH"
 
 $mtx.ReleaseMutex()

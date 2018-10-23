@@ -2,9 +2,14 @@
 name: diego-ssh
 
 templates:
-  pre-start.ps1: bin/pre-start.ps1
+  pre-start.ps1.erb: bin/pre-start.ps1
 
 packages:
 - diego-ssh
 
-properties: {}
+properties:
+  diego_ssh.public_key:
+    description: "Public Key for ssh"
+  diego_ssh.port:
+    description: "Port for the agent to listen on"
+    default: 22
