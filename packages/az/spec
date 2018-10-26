@@ -1,0 +1,7 @@
+---
+name: az
+
+dependencies: []
+
+files:
+    - az/azure-cli-*.msi

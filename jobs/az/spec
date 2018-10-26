@@ -1,0 +1,11 @@
+---
+name: az
+
+templates:
+    pre-start.ps1: bin/pre-start.ps1
+
+packages:
+    - az
+
+properties: {}
+
