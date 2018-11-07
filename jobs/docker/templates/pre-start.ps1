@@ -18,6 +18,8 @@ if (-not $OldPath.Contains($AddedFolder)) {
 
 $mtx.ReleaseMutex()
 
-C:\var\vcap\packages\docker\docker\dockerd --register-service
-Start-Service Docker
+powershell $PSScriptRoot\enable-tls.ps1
 
+C:\var\vcap\packages\docker\docker\dockerd --register-service
+
+Start-Service Docker

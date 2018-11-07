@@ -3,8 +3,19 @@ name: docker
 
 templates:
   pre-start.ps1: bin/pre-start.ps1
+  enable-tls.ps1.erb: bin/enable-tls.ps1
+  ca.pem.erb: config/certs/ca.pem
+  cert.pem.erb: config/certs/cert.pem
+  key.pem.erb: config/certs/key.pem
 
 packages:
 - docker
 
-properties: {}
+properties: 
+  docker.tls.ca:
+    description: "Optional PEM-encoded CA certificate for the docker daemon."
+  docker.tls.certificate:
+    description: "Optional PEM-encoded certificate for the docker daemon."
+  docker.tls.private_key:
+    description: "Optional PEM-encoded key for the docker daemon."
+
