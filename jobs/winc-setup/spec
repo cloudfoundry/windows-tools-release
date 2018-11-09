@@ -1,0 +1,15 @@
+---
+name: winc-setup
+
+templates:
+    pre-start.ps1.erb: bin/pre-start.ps1
+
+packages:
+- golang-windows
+- git
+- mingw64
+
+properties:
+  winc_setup.docker_tag:
+    description: "docker image tag for groot pull"
+    default: 1803

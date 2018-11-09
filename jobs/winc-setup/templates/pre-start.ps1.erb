@@ -1,0 +1,67 @@
+Write-Host 'Hello!'
+$ErrorActionPreference = 'Stop'
+trap { $host.SetShouldExit(1) }
+
+if (!(Get-Command "git" -errorAction SilentlyContinue))
+{
+    Write-Error "git not found"
+}
+Write-Host 'git was found'
+if (!(Get-Command "go" -errorAction SilentlyContinue))
+{
+    Write-Error "go not found"
+}
+Write-Host 'go was found'
+if (!(Get-Command "gcc" -errorAction SilentlyContinue))
+{
+    Write-Error "gcc not found"
+}
+Write-Host 'gcc was found'
+
+$DOCKER_TAG="<%= p('winc_setup.docker_tag') %>"
+$IMAGE="docker:///cloudfoundry/windows2016fs:$DOCKER_TAG"
+$ENV:GOPATH="C:\workspace\go"
+New-Item -Type Directory -Name "go" -Path "C:\workspace" -Force -ErrorAction SilentlyContinue
+Write-Host 'go directory was created'
+
+$grootImageStore="c:\ProgramData\groot"
+New-Item -Type Directory -Name "groot" -Path "C:\ProgramData" -Force -ErrorAction SilentlyContinue
+Write-Host 'groot directory was created'
+
+go get code.cloudfoundry.org/groot-windows
+Write-Host 'go get done'
+
+pushd $env:GOPATH\src\code.cloudfoundry.org\groot-windows
+  go build -o $env:GOPATH\bin\groot.exe main.go
+  gcc -c .\volume\quota\quota.c -o $env:GOPATH\bin\quota.o
+  gcc -shared -o $env:GOPATH\bin\quota.dll $env:GOPATH\bin\quota.o -lole32 -loleaut32
+popd
+Write-Host 'pushd done'
+
+# Docker pull was flaky and seems to fail
+# is groot pull as well?
+$retry = 0
+$worked = $false
+while (-not $worked) {
+  try {
+    Write-Host 'groot pull running'
+    & "$env:GOPATH\bin\groot.exe" --driver-store $grootImageStore pull $IMAGE
+    if ( $? -ne $True) {
+      throw "Failed to execute command"
+    }
+    $worked = $true
+  } catch {
+    if ($retry -gt 5) {
+      Write-Error "failed 5 times to run the commnad"
+      break
+    }
+    $retry = $retry + 1
+    Start-Sleep -s 10
+  }
+}
+
+$HKLM_ENV='Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment'
+Set-ItemProperty -Path "$HKLM_ENV" -Name WINC_TEST_ROOTFS -Value $IMAGE
+Set-ItemProperty -Path "$HKLM_ENV" -Name GARDEN_TEST_ROOTFS -Value $IMAGE
+Set-ItemProperty -Path "$HKLM_ENV" -Name GROOT_BINARY -Value "$env:GOPATH\bin\groot.exe"
+Set-ItemProperty -Path "$HKLM_ENV" -Name GROOT_IMAGE_STORE -Value $grootImageStore
