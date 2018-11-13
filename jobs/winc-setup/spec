@@ -2,7 +2,7 @@
 name: winc-setup
 
 templates:
-    pre-start.ps1.erb: bin/pre-start.ps1
+    post-deploy.ps1.erb: bin/post-deploy.ps1
 
 packages:
 - golang-windows
