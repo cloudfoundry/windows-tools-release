@@ -1,0 +1,9 @@
+---
+name: ephemeral-disk-concourse
+
+templates:
+    pre-start.ps1: bin/pre-start.ps1
+
+packages: []
+
+properties: {}
