@@ -57,6 +57,7 @@ variables:
 ```
 bosh deploy manifest.yml -v internal_ip=<vm ip> --vars-store creds.yml
 
+mkdir ~/.docker/my-windows-vm
 bosh interpolate creds.yml --path=/docker_tls/ca > ~/.docker/my-windows-vm/ca.pem
 bosh interpolate creds.yml --path=/docker_tls/certificate > ~/.docker/my-windows-vm/cert.pem
 bosh interpolate creds.yml --path=/docker_tls/private_key > ~/.docker/my-windows-vm/key.pem
