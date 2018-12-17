@@ -17,7 +17,7 @@ Mostly used to install packages on a Concourse windows-worker
 - [Ruby](https://rubyinstaller.org/downloads/)
 - [GNU make](http://gnuwin32.sourceforge.net/packages/make.htm)
 
-### Docker TLS usage
+### Optional Docker TLS usage
 1.) Add variables to manifest
 ```
 ...
