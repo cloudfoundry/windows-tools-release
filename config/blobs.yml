@@ -18,10 +18,10 @@ cmake/cmake-3.8.0-rc2-win64-x64.zip:
   size: 25615806
   object_id: 723cc335-e647-46bf-631a-d81135fdcb3d
   sha: dd65bc4af74bb019056dc2d9dcaa4d079f3a0abd
-docker/docker-17.06.0-dev.zip:
-  size: 17748489
-  object_id: a1ce85f2-8c6a-4f2f-5bf1-cb3abb2c90a1
-  sha: c21469c707a7362de8766582b7a28dbb4194e8df
+docker/docker-18-09-0.zip:
+  size: 69660530
+  object_id: 501b1529-9f14-47cc-771f-37d3d4e33f23
+  sha: b3defe7404f333309c36c448ab827e905e259e7e
 git/Git-2.13.0-64-bit.exe:
   size: 37156256
   object_id: f5373af5-252d-41ff-63c1-a2f60ad1846e
