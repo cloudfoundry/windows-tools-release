@@ -15,4 +15,15 @@ if (-not $OldPath.Contains($AddedFolder)) {
   Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH -Value $newPath
 }
 
+$BazelSh="C:\var\vcap\packages\msys2\usr\bin\bash.exe"
+Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name BAZEL_SH -Value $BazelSh
+
+$BazelVc="C:\var\vcap\data\VSBuildTools\2017\VC"
+Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name BAZEL_VC -Value $BazelVc
+
+$EnvoyBazelRoot="c:\_eb"
+Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name ENVOY_BAZEL_ROOT -Value $EnvoyBazelRoot
+
+Add-Content -Path "C:\Windows\system32\drivers\etc\hosts" -Encoding ASCII "::1 localhost`n127.0.0.1 localhost`n"
+
 $mtx.ReleaseMutex()
