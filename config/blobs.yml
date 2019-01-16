@@ -2,6 +2,10 @@
   size: 1668096
   object_id: bedc5852-10af-44ee-6899-40a6d24283d7
   sha: bae316e5148d3b42efa1d3f272afc10d3ffa6f4b
+aws/AWSCLI64PY3.msi:
+  size: 20566016
+  object_id: 211bc015-7440-48a9-6f2e-9051aafb66e5
+  sha: f639d8867b19fec39a54b5def291cfea5e86bb8b
 az/azure-cli-2.0.49.msi:
   size: 41275392
   object_id: 709f4f77-aa77-4c35-6c05-a2c7304af1d8

@@ -1,0 +1,7 @@
+---
+name: aws
+
+dependencies: []
+
+files:
+    - aws/AWSCLI64*.msi

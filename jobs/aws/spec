@@ -1,0 +1,11 @@
+---
+name: aws
+
+templates:
+    pre-start.ps1: bin/pre-start.ps1
+
+packages:
+    - aws
+
+properties: {}
+
