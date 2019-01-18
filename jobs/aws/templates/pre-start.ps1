@@ -9,8 +9,7 @@ if (!$mtx.WaitOne(300000)) {
 
 $logDir = "c:\var\vcap\sys\log\aws"
 $path=(Get-ChildItem "c:\var\vcap\packages\aws\AWSCLI64*.msi").FullName
-$installDir = "c:\var\vcap\data\aws"
 
-Start-Process -FilePath msiexec -ArgumentList "/i $path SDKFOLDER=$installDir /qn /lxv $logDir\install.log" -Wait -PassThru -NoNewWindow
+Start-Process -FilePath msiexec -ArgumentList "/i $path /qn /lxv $logDir\install.log" -Wait -PassThru -NoNewWindow
 
 $mtx.ReleaseMutex()
