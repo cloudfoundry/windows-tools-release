@@ -7,9 +7,9 @@ $hklm_env="HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment"
 
 function ResetEnv {
   $env:PATH=(Get-ItemProperty -Path "$hklm_env" -Name PATH).PATH
-  $env:BAZEL_VC=(Get-ItemProperty -Path "$hklm_env" -Name BAZEL_VC).BAZEL_VC
-  $env:BAZEL_SH=(Get-ItemProperty -Path "$hklm_env" -Name BAZEL_SH).BAZEL_SH
-  $env:ENVOY_BAZEL_ROOT=(Get-ItemProperty -Path "$hklm_env" -Name ENVOY_BAZEL_ROOT).ENVOY_BAZEL_ROOT
+  $env:BAZEL_VC=(Get-ItemProperty -Path "$hklm_env" -Name BAZEL_VC -ErrorAction SilentlyContinue).BAZEL_VC
+  $env:BAZEL_SH=(Get-ItemProperty -Path "$hklm_env" -Name BAZEL_SH -ErrorAction SilentlyContinue).BAZEL_SH
+  $env:ENVOY_BAZEL_ROOT=(Get-ItemProperty -Path "$hklm_env" -Name ENVOY_BAZEL_ROOT -ErrorAction SilentlyContinue).ENVOY_BAZEL_ROOT
 }
 
 ResetEnv
