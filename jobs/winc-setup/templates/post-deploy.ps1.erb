@@ -18,8 +18,7 @@ if (!(Get-Command "gcc" -errorAction SilentlyContinue))
 }
 Write-Host 'gcc was found'
 
-$DOCKER_TAG="<%= p('winc_setup.docker_tag') %>"
-$IMAGE="docker:///cloudfoundry/windows2016fs:$DOCKER_TAG"
+$CONTAINER_IMAGE_URI="<%= p('winc_setup.container_image_uri') %>"
 $ENV:GOPATH="C:\workspace\go"
 New-Item -Type Directory -Name "go" -Path "C:\workspace" -Force -ErrorAction SilentlyContinue
 Write-Host 'go directory was created'
@@ -45,7 +44,7 @@ $worked = $false
 while (-not $worked) {
   try {
     Write-Host 'groot pull running'
-    & "$env:GOPATH\bin\groot.exe" --driver-store $grootImageStore pull $IMAGE
+    & "$env:GOPATH\bin\groot.exe" --driver-store $grootImageStore pull $CONTAINER_IMAGE_URI
     if ( $? -ne $True) {
       throw "Failed to execute command"
     }
@@ -61,7 +60,7 @@ while (-not $worked) {
 }
 
 $HKLM_ENV='Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment'
-Set-ItemProperty -Path "$HKLM_ENV" -Name WINC_TEST_ROOTFS -Value $IMAGE
-Set-ItemProperty -Path "$HKLM_ENV" -Name GARDEN_TEST_ROOTFS -Value $IMAGE
+Set-ItemProperty -Path "$HKLM_ENV" -Name WINC_TEST_ROOTFS -Value $CONTAINER_IMAGE_URI
+Set-ItemProperty -Path "$HKLM_ENV" -Name GARDEN_TEST_ROOTFS -Value $CONTAINER_IMAGE_URI
 Set-ItemProperty -Path "$HKLM_ENV" -Name GROOT_BINARY -Value "$env:GOPATH\bin\groot.exe"
 Set-ItemProperty -Path "$HKLM_ENV" -Name GROOT_IMAGE_STORE -Value $grootImageStore
