@@ -1,0 +1,30 @@
+﻿$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+# only support explicit disk numbers by default
+#  TODO: add detection logic which would need to account for
+#  with/without ephemeral disk and multiple persistent disks
+$diskNumber = "<%= p('disk_number', '') %>"
+
+if (!$diskNumber) {
+    Exit 0
+}
+
+$persistentDisk = Get-Disk -Number $diskNumber
+
+# new disks are offline and read-only by default
+Set-Disk -Number $diskNumber -IsOffline $false
+Set-Disk -Number $diskNumber -IsReadOnly $false
+
+# only format the disk if it is raw (unformated)
+if ($persistentDisk.PartitionStyle -Eq "RAW") {
+    Initialize-Disk -Number $diskNumber -PartitionStyle GPT
+    $newPartition=(New-Partition -DiskNumber $diskNumber -UseMaximumSize -AssignDriveLetter)
+    Format-Volume -Partition $newPartition -FileSystem NTFS
+}
+
+# create a symlink at C:\var\vcap\store to the drive letter (the first access path: ex "E:\")
+if (!(Test-Path "C:\var\vcap\store")) {
+    $accessPath = (get-partition -disknumber $diskNumber | where AccessPaths -gt 0).AccessPaths[0]
+    New-Item -Type SymbolicLink -Path "C:\var\vcap\store" -Value $accessPath
+}

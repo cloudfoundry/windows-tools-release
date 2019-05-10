@@ -1,0 +1,12 @@
+---
+name: setup-persistent-disk-store
+description: "Workaround for missing persistent disk support in bosh-agent (as of 2019-05). Note: This doesn't enable immediate access to the store, jobs that rely on the disk will have to wait for this job to mount it or timeout"
+
+templates:
+  pre-start.ps1.erb: bin/pre-start.ps1
+
+packages: []
+
+properties: 
+  disk_number:
+    description: 'Optional disk number of a persistent disk to mount to c:\var\vcap\store, and format if unformatted. Usually "2" for first persistent disk'
