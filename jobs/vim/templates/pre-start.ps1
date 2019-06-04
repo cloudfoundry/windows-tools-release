@@ -9,4 +9,4 @@ if (-not $OldPath.Contains($AddedFolder)) {
   Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH -Value $newPath
 }
 
-cp bin/_vimrc $env:HOME/_vimrc
+cp C:/var/vcap/jobs/vim/bin/_vimrc $env:HOME/_vimrc
