@@ -1,0 +1,21 @@
+$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
+
+$path = "$BOSH_INSTALL_TARGET\vim81w32.zip"
+$unzippedPath = "$BOSH_INSTALL_TARGET\vim_unzipped"
+
+Invoke-WebRequest -UseBasicParsing "ftp://ftp.vim.org/pub/vim/pc/vim81w32.zip" -OutFile $path
+
+rm -r -force $unzippedPath -ea 0
+mkdir $unzippedPath
+
+if (Get-Command Expand-Archive -ErrorAction SilentlyContinue) {
+  Expand-Archive -Path $path -DestinationPath $unzippedPath
+} else {
+  Add-Type -AssemblyName System.IO.Compression.FileSystem
+  [System.IO.Compression.ZipFile]::ExtractToDirectory($path, $unzippedPath)
+}
+
+Exit 0

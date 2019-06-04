@@ -1,0 +1,11 @@
+---
+name: vim
+
+templates:
+  _vimrc: bin/_vimrc
+  pre-start.ps1: bin/pre-start.ps1
+
+packages:
+- vim
+
+properties: {}
