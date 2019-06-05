@@ -9,4 +9,19 @@ if (-not $OldPath.Contains($AddedFolder)) {
   Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH -Value $newPath
 }
 
-cp C:/var/vcap/jobs/vim/bin/_vimrc $env:HOME/_vimrc
+$func=@'
+function vim() {
+  if ( -Not (Test-Path ~/_vimrc -PathType Leaf)) {
+    cp C:/var/vcap/jobs/vim/bin/_vimrc ~/_vimrc
+  }
+  vim.exe $args
+}
+'@
+
+$PsProfile = "$PsHome/Profile.ps1"
+if (!(Test-Path $PsProfile))
+{
+
+   New-Item -Path $PsProfile -ItemType File -Force
+}
+Add-Content -Path $PsProfile -Value $func
