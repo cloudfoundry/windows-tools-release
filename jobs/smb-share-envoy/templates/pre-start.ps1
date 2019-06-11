@@ -3,10 +3,14 @@ trap { $host.SetShouldExit(1) }
 
 $shareDir = "e:\workspace"
 
-Get-Disk | Where-Object PartitionStyle -eq 'RAW' | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize
-Format-Volume -DriveLetter E -FileSystem NTFS -Confirm:$false
+if (!(test-path E:\workspace)) {
+  Clear-Disk -Number 1 -RemoveData -RemoveOEM -Confirm:$false
+  Initialize-Disk -Number 1 -PartitionStyle MBR
+  New-Partition -DiskNumber 1 -AssignDriveLetter -UseMaximumSize
 
-New-Item -Type Directory -Path "e:\" -Name "workspace" -Force
+  Format-Volume -DriveLetter E -FileSystem NTFS -Confirm:$false
+  New-Item -Type Directory -Path "e:\" -Name "workspace" -Force
+}
 
 Remove-SmbShare -Name "workspace" -ErrorAction SilentlyContinue -Force
 New-SmbShare -Name "workspace" -path $shareDir -FullAccess "Users"
