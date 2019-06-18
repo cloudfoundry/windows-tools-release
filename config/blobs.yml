@@ -10,10 +10,10 @@ az/azure-cli-2.0.49.msi:
   size: 41275392
   object_id: 709f4f77-aa77-4c35-6c05-a2c7304af1d8
   sha: f39a65c02a89e46f507004fdfe14729da4f03232
-bazel/bazel-ee155508f.zip:
-  size: 91684096
-  object_id: f90a4c50-5453-46dd-5f48-133c2e40f6f8
-  sha: 77da289df35e491f5da4e66d1eb8c8f9e921b883
+bazel/bazel-f2d131a4c.zip:
+  size: 91680758
+  object_id: e778511a-2155-4c87-496d-891db2a8e5d2
+  sha: 723de0f7898f99393c36b6cbcd30ad3f58c7694b
 bosh-cli/bosh-cli-2.0.40-windows-amd64.exe:
   size: 27397632
   object_id: 80961a4c-7921-4c24-77e1-71ae9ee5ccc5
