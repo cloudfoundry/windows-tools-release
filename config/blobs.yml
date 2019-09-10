@@ -54,10 +54,10 @@ ninja/ninja-win-v1.8.2.zip:
   size: 247692
   object_id: 1e8cf81e-3caa-4311-440a-86ee923bd87a
   sha: 637cc6e144f5cc7c6388a30f3c32ad81b2e0442e
-packer/packer-1.3.5.exe:
-  size: 105203712
-  object_id: 6262ed68-af4f-43f1-4c78-1d5cabbc6aaf
-  sha: 15ec951043e9825e99bd847e877c7ebf1b30d037
+packer/packer-1.4.3-local.exe:
+  size: 155997696
+  object_id: b0b33990-e4f3-4c4a-6407-98946cb5729b
+  sha: sha256:2b340a82c022cf5e2c9e5ae490377ee804520dd85f23f0b88c5dce2eae93717c
 perl64/strawberry-perl-5.26.1.1-64bit.msi:
   size: 99017793
   object_id: 2a69a764-bd03-405f-4b7c-9d0d4b281aac
