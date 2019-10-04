@@ -2,7 +2,7 @@
 name: diego-ssh
 
 dependencies:
-- golang-1.12-windows
+- golang-1.13-windows
 
 files:
   - winpty.tgz

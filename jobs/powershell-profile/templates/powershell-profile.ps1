@@ -8,8 +8,8 @@ If (Test-Path "C:\var\vcap\data\golang-windows") {
   $env:PATH+=";$env:GOBIN"
 }
 
-If (Test-Path "C:\var\vcap\data\golang-1.12-windows") {
-  $env:GOPATH="C:\var\vcap\data\golang-1.12-windows\go"
-  $env:GOBIN="C:\var\vcap\data\golang-1.12-windows\go\bin"
+If (Test-Path "C:\var\vcap\data\golang-1.13-windows") {
+  $env:GOPATH="C:\var\vcap\data\golang-1.13-windows\go"
+  $env:GOBIN="C:\var\vcap\data\golang-1.13-windows\go\bin"
   $env:PATH+=";$env:GOBIN"
 }
