@@ -1,0 +1,28 @@
+$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
+$mysqlzip="$env:TEMP\mysql.zip"
+
+Invoke-WebRequest -UseBasicParsing "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.17-winx64.zip" -OutFile "$mysqlzip"
+
+if (Get-Command Expand-Archive -ErrorAction SilentlyContinue) {
+  Expand-Archive -Path $mysqlzip -DestinationPath ${BOSH_INSTALL_TARGET}
+} else {
+  Add-Type -AssemblyName System.IO.Compression.FileSystem
+  [System.IO.Compression.ZipFile]::ExtractToDirectory($mysqlzip, ${BOSH_INSTALL_TARGET})
+}
+
+
+$dest=(Get-ChildItem "$BOSH_INSTALL_TARGET\\mysql-*").FullName
+
+$iniFileDest="$dest\my.ini"
+@"
+[mysqld]
+basedir=${dest}
+datadir=C:\\var\\vcap\\data\\mysql
+port=3306
+"@ | Out-File $iniFileDest -Force -Encoding ASCII
+
+
+Exit 0

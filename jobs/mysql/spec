@@ -1,0 +1,14 @@
+---
+name: mysql
+
+templates:
+  pre-start.ps1: bin/pre-start.ps1
+  post-start.ps1.erb: bin/post-start.ps1
+
+packages:
+- mysql
+
+properties:
+  post-install:
+    description: "command to run after the install finishes"
+    default: ""

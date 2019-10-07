@@ -1,0 +1,23 @@
+﻿$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$MYSQL_PACKAGE=(Get-ChildItem "C:\\var\\vcap\\packages\\mysql\\mysql-*").FullName
+
+$P=(Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).Path
+$env:PATH="$env:PATH;$P"
+
+Stop-Service mysql -ErrorAction SilentlyContinue
+
+Remove-Item C:\var\vcap\data\mysql -Force -Recurse
+
+mysqld.exe --defaults-file="$MYSQL_PACKAGE\\my.ini" --initialize-insecure
+if ($LASTEXITCODE -ne 0) {
+  exit $LASTEXITCODE
+}
+mysqld.exe --install mysql
+if ($LASTEXITCODE -ne 0) {
+  exit $LASTEXITCODE
+}
+start-service "mysql"
+
+<%= p("post-install").gsub(/\r\n/, "\n").gsub(/\n/, "\r\n") %>
