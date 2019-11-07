@@ -18,7 +18,7 @@ if (-not $OldPath.Contains($AddedFolder)) {
 $BazelSh="C:\var\vcap\packages\msys2\usr\bin\bash.exe"
 Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name BAZEL_SH -Value $BazelSh
 
-$BazelVc="C:\var\vcap\data\VSBuildTools\2017\VC"
+$BazelVc="C:\var\vcap\data\VSBuildTools\2019\VC"
 Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name BAZEL_VC -Value $BazelVc
 
 $EnvoyBazelRoot="c:\_eb"

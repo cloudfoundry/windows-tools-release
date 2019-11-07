@@ -1,0 +1,10 @@
+---
+name: vs2019
+
+templates:
+  pre-start.ps1: bin/pre-start.ps1
+
+packages:
+- vs2019
+
+properties: {}

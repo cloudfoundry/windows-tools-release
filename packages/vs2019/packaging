@@ -1,0 +1,11 @@
+$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
+$vsexe="$env:TEMP\vs_community.exe"
+
+Invoke-WebRequest -UseBasicParsing "https://aka.ms/vs/16/release/vs_community.exe" -OutFile "$vsexe"
+
+Start-Process -FilePath "$vsexe" -ArgumentList "--installPath $BOSH_INSTALL_TARGET --add Microsoft.VisualStudio.Workload.NetWeb --add Microsoft.VisualStudio.Workload.CoreEditor --add Microsoft.VisualStudio.Workload.NetCoreTools --add Microsoft.VisualStudio.Workload.Universal --includeRecommended --addProductLang en-US --wait -p --norestart" -Wait -PassThru -NoNewWindow
+
+Exit 0
