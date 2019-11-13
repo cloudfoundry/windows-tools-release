@@ -1,0 +1,10 @@
+---
+name: llvm
+
+templates:
+  pre-start.ps1: bin/pre-start.ps1
+
+packages:
+- llvm
+
+properties: {}
