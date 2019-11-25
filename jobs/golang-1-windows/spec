@@ -1,0 +1,10 @@
+---
+name: golang-windows
+
+templates:
+  pre-start.ps1: bin/pre-start.ps1
+
+packages:
+- golang-1-windows
+
+properties: {}
