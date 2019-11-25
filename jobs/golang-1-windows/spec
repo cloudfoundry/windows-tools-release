@@ -1,5 +1,5 @@
 ---
-name: golang-windows
+name: golang-1-windows
 
 templates:
   pre-start.ps1: bin/pre-start.ps1
