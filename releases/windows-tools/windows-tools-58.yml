@@ -1,7 +1,7 @@
 name: windows-tools
 version: "58"
-commit_hash: 8c851c9
-uncommitted_changes: false
+commit_hash: 33a62a1
+uncommitted_changes: true
 jobs:
 - name: aws
   version: 3dd16eb71cac6d1ef93e6093ede5635cb04d70ab
@@ -43,6 +43,10 @@ jobs:
   version: b46901fd1868786aff5df679f42ecd7cf99b53f6
   fingerprint: b46901fd1868786aff5df679f42ecd7cf99b53f6
   sha1: 7ae77b021389d175f2477cc52b16a7fa6c9fbcf6
+- name: golang-1-windows
+  version: b230f86f4eb2138888c4ab0b5033fa5cb180383a
+  fingerprint: b230f86f4eb2138888c4ab0b5033fa5cb180383a
+  sha1: 0103347641a18c93292b5487c9d541698f065bed
 - name: golang-windows
   version: b0cc178997a18a753da711454dff8c924798bbe9
   fingerprint: b0cc178997a18a753da711454dff8c924798bbe9
