@@ -3,6 +3,7 @@ name: vs_buildtools
 
 templates:
   pre-start.ps1: bin/pre-start.ps1
+  vsconfig:      bin/vsconfig
 
 packages:
 - vs_buildtools

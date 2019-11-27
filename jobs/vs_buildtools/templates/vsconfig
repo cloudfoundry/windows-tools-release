@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "components": [
+    "Microsoft.VisualStudio.Component.Roslyn.Compiler",
+    "Microsoft.Component.MSBuild",
+    "Microsoft.VisualStudio.Component.CoreBuildTools",
+    "Microsoft.VisualStudio.Workload.MSBuildTools",
+    "Microsoft.VisualStudio.Component.Windows10SDK",
+    "Microsoft.VisualStudio.Component.VC.CoreBuildTools",
+    "Microsoft.VisualStudio.Component.VC.Tools.x86.x64",
+    "Microsoft.VisualStudio.Component.VC.Redist.14.Latest",
+    "Microsoft.VisualStudio.Component.Windows10SDK.18362",
+    "Microsoft.VisualStudio.Component.VC.CMake.Project",
+    "Microsoft.VisualStudio.Component.TestTools.BuildTools",
+    "Microsoft.Net.Component.4.8.SDK",
+    "Microsoft.VisualStudio.Workload.VCTools",
+    "Microsoft.VisualStudio.Component.NuGet.BuildTools",
+    "Microsoft.NetCore.Component.SDK",
+    "Microsoft.Component.NetFX.Native",
+    "Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools",
+    "Microsoft.VisualStudio.Workload.UniversalBuildTools"
+  ]
+}
