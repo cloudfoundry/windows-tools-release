@@ -109,6 +109,8 @@ builds:
     version: "10"
   eeb4769c-b290-4e0a-75f7-b288317f26ed:
     version: "42"
+  eec49079-4a5e-4454-57ad-b4217fe6b667:
+    version: "60"
   f1770e5a-8d74-44fd-77e1-1b5b39f8ec14:
     version: "41"
 format-version: "2"
