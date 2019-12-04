@@ -1,0 +1,11 @@
+$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$zipPath=(Get-ChildItem "pester/Pester*.zip").FullName
+
+Expand-Archive -Path $zipPath -DestinationPath $env:BOSH_INSTALL_TARGET
+
+Set-Location $env:BOSH_INSTALL_TARGET
+$dirPath=(Get-ChildItem "Pester*" -Directory).FullName
+Rename-Item -Path $dirPath -NewName Pester
+
