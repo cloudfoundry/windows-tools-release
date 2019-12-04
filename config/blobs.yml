@@ -50,10 +50,10 @@ mingw/x86_64-7.2.0-release-posix-seh-rt_v5-rev0.7z:
   size: 48975566
   object_id: 9eda914e-e920-434b-4535-f2c397497817
   sha: 5e4ca4485384f04399ae0aa06bab509721c50095
-msys2/msys2-base-x86_64-20180531.tar.xz:
-  size: 53376740
-  object_id: 15c03474-8e22-440d-587a-15221d947aaf
-  sha: 309f604a165179d50fbe4131cf87bd160769f974
+msys2/msys2-base-x86_64-20190524.tar.xz:
+  size: 64968792
+  object_id: 27c8d700-37c6-495d-605e-d6b0c3c09fd0
+  sha: cfe5035b1b81b43469d16bfc23be8006b9a44455
 ninja/ninja-win-v1.8.2.zip:
   size: 247692
   object_id: 1e8cf81e-3caa-4311-440a-86ee923bd87a
