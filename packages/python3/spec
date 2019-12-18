@@ -1,0 +1,7 @@
+---
+name: python3
+
+dependencies: []
+
+files:
+- python3/python-*-amd64.exe

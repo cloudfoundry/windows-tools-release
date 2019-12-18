@@ -78,6 +78,10 @@ python/python-2.7.15.amd64.msi:
   size: 20246528
   object_id: a8134669-d26b-4ef3-4be7-6b7b8c9862f5
   sha: c097d38d29a894110db278bef3912a2a8f231214
+python3/python-3.8.0-amd64.exe:
+  size: 27505064
+  object_id: 23fd53ba-3f36-40cd-4064-b8988f16c44b
+  sha: 497b85609eb3211ab18e2d5f266a1a9a9903fae2
 ruby/ruby-2.5.1-2-x64.exe:
   size: 9185037
   object_id: 9449ffbf-dbe9-48dc-5e25-2b5228c6c1f0

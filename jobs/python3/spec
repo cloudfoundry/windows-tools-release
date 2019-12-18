@@ -1,0 +1,11 @@
+---
+name: python3
+
+templates:
+  pre-start.ps1.erb: bin/pre-start.ps1
+
+packages:
+  - python3
+
+properties: {}
+
