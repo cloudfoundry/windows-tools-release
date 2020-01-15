@@ -1,0 +1,7 @@
+---
+name: go-dep
+
+dependencies: []
+
+files:
+    - go-dep/dep-windows-amd64*

@@ -30,6 +30,10 @@ git/Git-2.13.0-64-bit.exe:
   size: 37156256
   object_id: f5373af5-252d-41ff-63c1-a2f60ad1846e
   sha: e1d7c6e5e16acaf3c108064a2ed158f604fa29a7
+go-dep/dep-windows-amd64-0.5.4.exe:
+  size: 11040256
+  object_id: e2ff5f72-95d9-40e2-61ce-22d32bc81afd
+  sha: sha256:61e542fcf5aeba57129387f3ff1dae006c13a6f09fbe1ffc2e9867a4555cee1d
 llvm/LLVM-9.0.0-win64.exe:
   size: 157915277
   object_id: 2bc4694c-d2cf-4b6e-791e-31f00dc2fece

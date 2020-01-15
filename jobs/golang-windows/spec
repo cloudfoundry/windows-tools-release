@@ -6,5 +6,6 @@ templates:
 
 packages:
 - golang-1.13-windows
+- go-dep
 
 properties: {}

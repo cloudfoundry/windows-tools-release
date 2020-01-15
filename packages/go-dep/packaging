@@ -1,0 +1,5 @@
+$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+New-Item -ItemType Directory "$env:BOSH_INSTALL_TARGET/go-dep"
+Copy-Item "go-dep/dep-windows-amd64*.exe" $env:BOSH_INSTALL_TARGET/go-dep/dep.exe"

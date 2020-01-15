@@ -20,3 +20,5 @@ if (-not $OldPath.Contains($AddedFolder)) {
 Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name GOROOT -Value $GoRoot
 
 $mtx.ReleaseMutex()
+
+Copy-Item "C:\var\vcap\packages\go-dep\dep.exe" "$GoRoot/bin/"
