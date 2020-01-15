@@ -1,6 +1,8 @@
 builds:
   08d0032e-1cca-4e85-7015-49c6059c4cb3:
     version: "39"
+  08dcc095-2f30-4be4-57b4-72bec5c7824c:
+    version: "64"
   0f72ec36-01dd-4a49-657c-0830a33d3ae6:
     version: "28"
   12cb7428-d776-43fd-7eab-c3eebb548461:
