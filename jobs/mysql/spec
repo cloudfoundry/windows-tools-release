@@ -4,6 +4,7 @@ name: mysql
 templates:
   pre-start.ps1: bin/pre-start.ps1
   post-start.ps1.erb: bin/post-start.ps1
+  drain.ps1: bin/drain.ps1
 
 packages:
 - mysql

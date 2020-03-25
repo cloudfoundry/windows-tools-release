@@ -91,9 +91,9 @@ ruby/ruby-2.5.1-2-x64.exe:
   object_id: 9449ffbf-dbe9-48dc-5e25-2b5228c6c1f0
   sha: 225559ef6a0340859dbc801587506a5280019a30
 vc_redist/vc_redist141.zip:
-  size: 14817661
-  object_id: 65ee054f-1456-426a-5b1b-27c072c7d57e
-  sha: 76094778448e5add96b143c9830744b5ad5a4884
+  size: 14818023
+  object_id: b32bdeab-d474-44ac-46f8-98de811fff08
+  sha: sha256:cac84992ab2148009a021e31a9f0b50206b8f20e04f13a1d4c897534028a1b09
 vs_buildtools/vs_buildtools-16.zip:
   size: 1260435
   object_id: bb451fd7-3198-4474-49be-9ff5f2b3f7a8

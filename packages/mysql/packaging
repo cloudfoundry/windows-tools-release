@@ -4,7 +4,7 @@ trap { $host.SetShouldExit(1) }
 $BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
 $mysqlzip="$env:TEMP\mysql.zip"
 
-Invoke-WebRequest -UseBasicParsing "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.17-winx64.zip" -OutFile "$mysqlzip"
+Invoke-WebRequest -UseBasicParsing "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.19-winx64.zip" -OutFile "$mysqlzip"
 
 if (Get-Command Expand-Archive -ErrorAction SilentlyContinue) {
   Expand-Archive -Path $mysqlzip -DestinationPath ${BOSH_INSTALL_TARGET}
