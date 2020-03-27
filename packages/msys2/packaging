@@ -55,16 +55,9 @@ private const int FILE_FLAG_BACKUP_SEMANTICS = 0x02000000;
 
 $BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
 $filepath=(Get-ChildItem "msys2/msys2-*.tar.xz").FullName
-$7zip="C:\var\vcap\packages\7zip\7z.exe"
+$tarpath="C:\var\vcap\packages\git\usr\bin\tar.exe"
 
-Start-Process -FilePath "$7zip" -ArgumentList "x $filepath -o$BOSH_INSTALL_TARGET -y" -Wait -NoNewWindow -PassThru
-
-$tarFile = (Get-ChildItem "$BOSH_INSTALL_TARGET/*.tar").FullName
-tar -xf $tarFile -C $BOSH_INSTALL_TARGET --strip-components=1
-if ($LASTEXITCODE -ne 0) {
-  exit $LASTEXITCODE
-}
-Remove-Item $tarFile
+Start-Process -FilePath "$tarpath" -ArgumentList "-xJf $filepath -C $BOSH_INSTALL_TARGET" -Wait -NoNewWindow -PassThru
 
 # Resolve-Path above will not unwind the symlinks and junctions
 # pacman will forcibly replace these with actual directories,
@@ -83,12 +76,14 @@ $ErrorActionPreference = 'Continue'
 $i = 0
 while (!$done) {
     Write-Host "`n================= SYSTEM UPDATE $((++$i)) =================`n"
-    bash -lc 'pacman --noconfirm -Syuu | tee /update.log'
+    bash -lc 'pacman -Syuu --noconfirm | tee /update.log'
     $done = (Get-Content "$BOSH_INSTALL_TARGET\update.log") -match 'there is nothing to do' | Measure-Object | ForEach-Object { $_.Count -eq 2 }
     $done = $done -or ($i -ge 5)
 }
 Write-Host "`n================= ADDITIONAL PACKAGES =================`n"
-bash -lc 'pacman --noconfirm -S patch diffutils zip unzip | tee /update.log'
+bash -lc 'pacman -S --noconfirm --needed patch diffutils compression | tee /update.log'
+Write-Host "`n================= CLEANUP PACKAGES ====================`n"
+bash -lc 'pacman -Scc --noconfirm | tee /update.log'
 Remove-Item "$BOSH_INSTALL_TARGET\update.log" -ea 0
 
 Exit 0
