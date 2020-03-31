@@ -53,8 +53,8 @@ private const int FILE_FLAG_BACKUP_SEMANTICS = 0x02000000;
     [System.Win32]::GetSymbolicLinkTarget($l_dir)
 }
 
-$BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
-$filepath=(Get-ChildItem "msys2/msys2-*.tar.xz").FullName
+$BOSH_INSTALL_TARGET = (Resolve-Path $env:BOSH_INSTALL_TARGET).replace(':', '').replace('\', '/')
+$filepath=("/" + (Get-ChildItem "msys2/msys2-*.tar.xz").FullName).replace(':', '').replace('\', '/')
 $tarpath="C:\var\vcap\packages\git\usr\bin\tar.exe"
 
 Start-Process -FilePath "$tarpath" -ArgumentList "-xJf $filepath -C $BOSH_INSTALL_TARGET" -Wait -NoNewWindow -PassThru
