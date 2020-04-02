@@ -3,6 +3,6 @@ name: ginkgo
 
 dependencies:
 - git
-- golang-1.13-windows
+- golang-1-windows
 
 files: []
