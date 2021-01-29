@@ -1,10 +1,9 @@
 [submodule "src/github.com/hashicorp/packer"]
 	path = src/github.com/hashicorp/packer
-	url = https://github.com/greenhouse-org/packer.git
+	url = https://github.com/hashicorp/packer.git
 [submodule "src/golang.org/x/tools"]
 	path = src/golang.org/x/tools
 	url = https://go.googlesource.com/tools
 [submodule "src/code.cloudfoundry.org/diego-ssh"]
 	path = src/code.cloudfoundry.org/diego-ssh
-	url = https://github.com/greenhouse-org/diego-ssh.git
-	branch = dev-box-binary
+	url = https://github.com/cloudfoundry/diego-ssh.git
