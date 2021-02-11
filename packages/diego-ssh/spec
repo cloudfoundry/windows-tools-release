@@ -7,5 +7,3 @@ dependencies:
 files:
   - winpty.tgz
   - code.cloudfoundry.org/diego-ssh/**/*.go
-  - code.cloudfoundry.org/diego-ssh/**/*.s
-  - code.cloudfoundry.org/diego-ssh/**/*.h
