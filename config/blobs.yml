@@ -46,14 +46,14 @@ make/make-3.81-bin.zip:
   size: 495645
   object_id: 4dc3c974-bd26-482e-74ed-dfe774444320
   sha: 7c1e23a93e6cb78975f36efd22d598241b1f0e8b
-mingw/i686-7.2.0-release-win32-dwarf-rt_v5-rev0.7z:
-  size: 44128425
-  object_id: 7abf9665-2e74-4a1d-4b8f-aa090660e60e
-  sha: 4be200a4aa1cb0fab2a40915767321e047b8c043
-mingw/x86_64-7.2.0-release-posix-seh-rt_v5-rev0.7z:
-  size: 48975566
-  object_id: 9eda914e-e920-434b-4535-f2c397497817
-  sha: 5e4ca4485384f04399ae0aa06bab509721c50095
+mingw/i686-8.1.0-release-win32-dwarf-rt_v6-rev0.7z:
+  size: 45077278
+  object_id: 20a0ba7e-dc03-4af1-5e66-ec12c13bcc47
+  sha: sha256:28d0a0608d9524868f7feaf9f9ec5daf69669076eafc9e776af02d60ebfba93c
+mingw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z:
+  size: 49370037
+  object_id: fd891f12-d696-4dc3-6162-24fd32d98927
+  sha: sha256:853970527b5de4a55ec8ca4d3fd732c00ae1c69974cc930c82604396d43e79f8
 msys2/msys2-base-x86_64-20190524.tar.xz:
   size: 64968792
   object_id: 27c8d700-37c6-495d-605e-d6b0c3c09fd0
