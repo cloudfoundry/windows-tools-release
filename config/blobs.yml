@@ -26,10 +26,10 @@ docker/docker-18-09-0.zip:
   size: 35556399
   object_id: 73880146-3c89-4268-5ef5-01a2ad21e376
   sha: 78c90fb79cef78fec167f0f48eb598ec6c80a4b7
-git/Git-2.13.0-64-bit.exe:
-  size: 37156256
-  object_id: f5373af5-252d-41ff-63c1-a2f60ad1846e
-  sha: e1d7c6e5e16acaf3c108064a2ed158f604fa29a7
+git/Git-2.33.0.2-64-bit.exe:
+  size: 50101024
+  object_id: 911805a3-ead1-472a-7441-83b6c09af811
+  sha: sha256:a5704733c219e9a0c96bfeb0febef62bc2518bdd4e358bc9519dbc5e63a3b5fe
 go-dep/dep-windows-amd64-0.5.4.exe:
   size: 11040256
   object_id: e2ff5f72-95d9-40e2-61ce-22d32bc81afd
