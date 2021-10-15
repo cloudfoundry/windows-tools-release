@@ -8,7 +8,7 @@ if (!$mtx.WaitOne(300000)) {
 }
 
 $OldPath=(Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).Path
-$GinkgoFolder="c:\var\vcap\packages\ginkgo\bin"
+$GinkgoFolder="c:\var\vcap\packages\ginkgo"
 
 if (-not $OldPath.Contains($GinkgoFolder)) {
     $NewPath=$OldPath+';'+$GinkgoFolder

@@ -1,8 +1,7 @@
 ---
 name: ginkgo
 
-dependencies:
-- git
-- golang-1-windows
+dependencies: []
 
-files: []
+files:
+- ginkgo/ginkgo-*.exe

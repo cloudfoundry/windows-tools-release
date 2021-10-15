@@ -1,13 +1,8 @@
 $ErrorActionPreference = "Stop";
 trap { $host.SetShouldExit(1) }
 
-$BOSH_INSTALL_TARGET = Resolve-Path "${env:BOSH_INSTALL_TARGET}"
+$BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
 
-$env:GOROOT="C:\var\vcap\packages\golang-1-windows\go"
-$env:GOPATH="${BOSH_INSTALL_TARGET}"
-$env:PATH="${env:GOROOT}\bin;C:\var\vcap\packages\git\bin;${env:PATH}"
-$ginkgo_path="github.com/onsi/ginkgo/ginkgo"
-$gomega_path="github.com/onsi/gomega"
-
-go.exe get -u $ginkgo_path
-go.exe get -u $gomega_path
+$source=(Get-ChildItem "ginkgo/ginkgo*.exe").FullName
+$destination = Join-Path $BOSH_INSTALL_TARGET "ginkgo.exe"
+Copy-Item $source $destination
