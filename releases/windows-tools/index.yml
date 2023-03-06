@@ -33,6 +33,8 @@ builds:
     version: "30"
   39d25ab6-cb5a-4f13-55b7-b20aa6aea504:
     version: "24"
+  3e64925e-8838-4153-62d2-62dee37227f4:
+    version: 80.1.0
   401f65d7-9bc6-41d2-639b-c6ebb811e408:
     version: "56"
   4443442c-6fcf-433b-7d80-4e2fb16b127e:
