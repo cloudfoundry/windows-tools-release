@@ -135,6 +135,8 @@ builds:
     version: "54"
   cf51c704-984d-4328-6e2d-30b7ae9cbe94:
     version: "65"
+  d099eea2-11d0-4aca-439b-5b9a6fe660e2:
+    version: 80.1.0
   d3f75316-a534-49f9-5964-7145ad518f04:
     version: "27"
   da5d7d59-5cdf-41bf-722c-d47aa8094919:
