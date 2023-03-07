@@ -1,4 +1,6 @@
 builds:
+  00da05e4-cbd7-45d0-6997-0a42ee9be089:
+    version: 80.2.0
   08d0032e-1cca-4e85-7015-49c6059c4cb3:
     version: "39"
   08dcc095-2f30-4be4-57b4-72bec5c7824c:
