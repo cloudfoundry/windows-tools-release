@@ -26,10 +26,10 @@ docker/docker-18-09-0.zip:
   size: 35556399
   object_id: 73880146-3c89-4268-5ef5-01a2ad21e376
   sha: 78c90fb79cef78fec167f0f48eb598ec6c80a4b7
-ginkgo/ginkgo-v1.16.5.exe:
-  size: 10706944
-  object_id: 639d2936-b4cc-4c54-7816-c1573a573e45
-  sha: sha256:5865295f3b14aba53d46f24732446714e757cfef3839a6abc2ea4ecb8c7f94e9
+ginkgo/ginkgo-v2.9.2.exe:
+  size: 14437888
+  object_id: 86bcdf23-6138-45d1-6ffb-bb31c03186f9
+  sha: sha256:154d0bb9d824208629c95c2c1a501a54369100b8751eea74d5f51eb85b015238
 git/Git-2.33.0.2-64-bit.exe:
   size: 50101024
   object_id: 911805a3-ead1-472a-7441-83b6c09af811
