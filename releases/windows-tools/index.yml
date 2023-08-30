@@ -135,6 +135,8 @@ builds:
     version: "35"
   b98d1530-9e7b-4d70-54ac-833334f993ba:
     version: 80.5.0
+  c2461306-a7d6-44fd-5887-5dc4963130b3:
+    version: 80.11.0
   c309a806-9837-46c4-6dfe-437dccf6d0b2:
     version: "5"
   c36bdd0f-2030-46fc-593e-d28f89cdcaee:
