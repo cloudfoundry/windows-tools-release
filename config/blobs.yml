@@ -90,10 +90,6 @@ vc_redist/vc_redist141.zip:
   size: 14818023
   object_id: b32bdeab-d474-44ac-46f8-98de811fff08
   sha: sha256:cac84992ab2148009a021e31a9f0b50206b8f20e04f13a1d4c897534028a1b09
-vs_buildtools/vs_buildtools-16.zip:
-  size: 1260435
-  object_id: bb451fd7-3198-4474-49be-9ff5f2b3f7a8
-  sha: f7df1a1967681e3140a185f3d4b4edaf0e2694c6
 winpty.tgz:
   size: 460765
   object_id: 04aa0cfd-9b12-47b9-4c79-a34990e29802

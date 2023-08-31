@@ -1,7 +1,0 @@
----
-name: vs_buildtools
-
-dependencies: []
-
-files:
-- vs_buildtools/vs_buildtools-*.zip

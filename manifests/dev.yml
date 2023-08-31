@@ -42,8 +42,6 @@ instance_groups:
     release: windows-tools
   - name: llvm
     release: windows-tools
-  - name: load-powershell-env
-    release: windows-tools
   - name: make
     release: windows-tools
   - name: mingw32
@@ -68,15 +66,7 @@ instance_groups:
     release: windows-tools
   - name: smb-share
     release: windows-tools
-  - name: smb-share-envoy
-    release: windows-tools
   - name: vim
-    release: windows-tools
-  - name: vs2017
-    release: windows-tools
-  - name: vs2019
-    release: windows-tools
-  - name: vs_buildtools
     release: windows-tools
   - name: winc-setup
     release: windows-tools
