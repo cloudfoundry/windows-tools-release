@@ -1,0 +1,7 @@
+---
+name: yq
+
+dependencies: []
+
+files:
+- yq/yq*.exe
