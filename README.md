@@ -16,7 +16,6 @@ Mostly used to install packages on a Concourse windows-worker
 - [processhacker](http://processhacker.sourceforge.net/downloads.php)
 - [Ruby](https://rubyinstaller.org/downloads/)
 - [GNU make](http://gnuwin32.sourceforge.net/packages/make.htm)
-- [msys2](https://repo.msys2.org/distrib/x86_64/)
 
 ### Optional Docker TLS usage
 1.) Add variables to manifest

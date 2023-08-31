@@ -10,10 +10,6 @@ az/azure-cli-2.0.49.msi:
   size: 41275392
   object_id: 709f4f77-aa77-4c35-6c05-a2c7304af1d8
   sha: f39a65c02a89e46f507004fdfe14729da4f03232
-bazel/bazel-bazelisk.zip:
-  size: 4695290
-  object_id: 06d5c264-bccf-45f5-7473-58ea3ea91bce
-  sha: 3f96762b092e0d9a72e398c2f8748911e15270f1
 bosh-cli/bosh-cli-2.0.40-windows-amd64.exe:
   size: 27397632
   object_id: 80961a4c-7921-4c24-77e1-71ae9ee5ccc5
@@ -58,10 +54,6 @@ mingw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z:
   size: 49370037
   object_id: fd891f12-d696-4dc3-6162-24fd32d98927
   sha: sha256:853970527b5de4a55ec8ca4d3fd732c00ae1c69974cc930c82604396d43e79f8
-msys2/msys2-base-x86_64-20230526.tar.xz:
-  size: 59246088
-  object_id: e3efc166-a80e-42c9-667f-7e99b8a52a7c
-  sha: sha256:a2d613508f99fadbdd3da5a9a36499fe21f4b00371f0d9cc932b22d67520f87e
 ninja/ninja-win-v1.8.2.zip:
   size: 247692
   object_id: 1e8cf81e-3caa-4311-440a-86ee923bd87a

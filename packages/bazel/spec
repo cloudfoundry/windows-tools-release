@@ -1,7 +1,0 @@
----
-name: bazel
-
-dependencies: []
-
-files:
-- bazel/bazel-*.zip

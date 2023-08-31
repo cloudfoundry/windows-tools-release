@@ -1,8 +1,0 @@
----
-name: msys2
-
-dependencies:
-- git
-
-files:
-- msys2/msys2-*.tar.xz

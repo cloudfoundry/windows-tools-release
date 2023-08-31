@@ -32,15 +32,8 @@ instance_groups:
     release: windows-tools
   - name: az
     release: windows-tools
-  - name: bazel
-    release: windows-tools
   - name: cmake
     release: windows-tools
-  - name: diego-ssh
-    release: windows-tools
-    properties:
-      diego_ssh:
-        public_key: ((diego_ssh.public_key)
   - name: docker
     release: windows-tools
   - name: ephemeral-disk-concourse
@@ -54,8 +47,6 @@ instance_groups:
   - name: make
     release: windows-tools
   - name: mingw32
-    release: windows-tools
-  - name: msys2
     release: windows-tools
   - name: ninja
     release: windows-tools
@@ -98,6 +89,3 @@ stemcells:
 - alias: windows
   os: windows2019
   version: latest
-variables:
-- name: diego_ssh
-  type: ssh
