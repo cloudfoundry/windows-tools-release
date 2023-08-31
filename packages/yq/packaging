@@ -1,0 +1,8 @@
+$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
+
+$source=(Get-ChildItem "yq/yq*.exe").FullName
+$destination = Join-Path $BOSH_INSTALL_TARGET "yq.exe"
+Copy-Item $source $destination
