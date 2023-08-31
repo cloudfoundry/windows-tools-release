@@ -26,10 +26,10 @@ ginkgo/ginkgo-v2.9.5.exe:
   size: 14446080
   object_id: 3013fbbc-ec26-44fa-41b5-a294e7e3481c
   sha: sha256:1da4dd0eaf53ad85411ffccf25257c1734fb4d3cc913fa7f0f2564d008d78fae
-git/Git-2.33.0.2-64-bit.exe:
-  size: 50101024
-  object_id: 911805a3-ead1-472a-7441-83b6c09af811
-  sha: sha256:a5704733c219e9a0c96bfeb0febef62bc2518bdd4e358bc9519dbc5e63a3b5fe
+git/Git-2.42.0.2-64-bit.exe:
+  size: 61263968
+  object_id: 23ca6d28-23c4-4bac-6fe2-86bdeadef572
+  sha: sha256:bd9b41641a258fd16d99beecec66132160331d685dfb4c714cea2bcc78d63bdb
 go-dep/dep-windows-amd64-0.5.4.exe:
   size: 11040256
   object_id: e2ff5f72-95d9-40e2-61ce-22d32bc81afd
@@ -46,14 +46,14 @@ make/make-3.81-bin.zip:
   size: 495645
   object_id: 4dc3c974-bd26-482e-74ed-dfe774444320
   sha: 7c1e23a93e6cb78975f36efd22d598241b1f0e8b
-mingw/i686-8.1.0-release-win32-dwarf-rt_v6-rev0.7z:
-  size: 45077278
-  object_id: 20a0ba7e-dc03-4af1-5e66-ec12c13bcc47
-  sha: sha256:28d0a0608d9524868f7feaf9f9ec5daf69669076eafc9e776af02d60ebfba93c
-mingw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z:
-  size: 49370037
-  object_id: fd891f12-d696-4dc3-6162-24fd32d98927
-  sha: sha256:853970527b5de4a55ec8ca4d3fd732c00ae1c69974cc930c82604396d43e79f8
+mingw/i686-13.1.0-release-win32-dwarf-ucrt-rt_v11-rev1.7z:
+  size: 76208605
+  object_id: 1bf3a259-be67-469f-5f1f-d9f28414e462
+  sha: sha256:239b97cede799e598460e25c1334709260d57193f001ea7cfb6c85be6572ebfc
+mingw/x86_64-13.1.0-release-posix-seh-ucrt-rt_v11-rev1.7z:
+  size: 72231676
+  object_id: f2ab61fe-ad86-4f48-439e-884e2b385154
+  sha: sha256:da69a72f8f7e021a738b5beb45c08398cc042cca8f8573d0f2ae263e65f5752a
 ninja/ninja-win-v1.8.2.zip:
   size: 247692
   object_id: 1e8cf81e-3caa-4311-440a-86ee923bd87a

@@ -10,8 +10,8 @@ Mostly used to install packages on a Concourse windows-worker
 - [docker](https://docs.docker.com/docker-for-windows/install/)
 - [git](https://gitforwindows.org/)
 - [Golang](https://golang.org/dl/)
-- [mingw32](http://www.mingw.org/)
-- [mingw64](http://www.mingw.org/)
+- [mingw32](https://github.com/niXman/mingw-builds-binaries/releases) - Use the win32-dwarf-ucrt builds
+- [mingw64](https://github.com/niXman/mingw-builds-binaries/releases) - Use the posix-seh-ucrt builds
 - [packer](https://www.packer.io/downloads.html)
 - [processhacker](http://processhacker.sourceforge.net/downloads.php)
 - [Ruby](https://rubyinstaller.org/downloads/)
