@@ -1,0 +1,103 @@
+name: windows-tools
+update:
+  canaries: 1
+  canary_watch_time: 5000-120000
+  max_in_flight: 1
+  update_watch_time: 5000-120000
+instance_groups:
+- name: windows-test
+  instances: 1
+  azs: [z1]
+  networks: [{name: default}]
+  stemcell: windows
+  vm_type: small
+  vm_extensions:
+  - 50GB_ephemeral_disk
+  jobs:
+  - name: mingw64
+    release: windows-tools
+  - name: golang-1-windows
+    release: windows-tools
+  - name: bosh-cli-windows
+    release: windows-tools
+  - name: processhacker
+    release: windows-tools
+  - name: vc_redist
+    release: windows-tools
+  - name: git
+    release: windows-tools
+  - name: mysql
+    release: windows-tools
+  - name: aws
+    release: windows-tools
+  - name: az
+    release: windows-tools
+  - name: bazel
+    release: windows-tools
+  - name: cmake
+    release: windows-tools
+  - name: diego-ssh
+    release: windows-tools
+    properties:
+      diego_ssh:
+        public_key: ((diego_ssh.public_key)
+  - name: docker
+    release: windows-tools
+  - name: ephemeral-disk-concourse
+    release: windows-tools
+  - name: ginkgo
+    release: windows-tools
+  - name: llvm
+    release: windows-tools
+  - name: load-powershell-env
+    release: windows-tools
+  - name: make
+    release: windows-tools
+  - name: mingw32
+    release: windows-tools
+  - name: msys2
+    release: windows-tools
+  - name: ninja
+    release: windows-tools
+  - name: packer
+    release: windows-tools
+  - name: perl64
+    release: windows-tools
+  - name: pester
+    release: windows-tools
+  - name: powershell-profile
+    release: windows-tools
+  - name: python
+    release: windows-tools
+  - name: python3
+    release: windows-tools
+  - name: ruby
+    release: windows-tools
+  - name: setup-persistent-disk-store
+    release: windows-tools
+  - name: smb-share
+    release: windows-tools
+  - name: smb-share-envoy
+    release: windows-tools
+  - name: vim
+    release: windows-tools
+  - name: vs2017
+    release: windows-tools
+  - name: vs2019
+    release: windows-tools
+  - name: vs_buildtools
+    release: windows-tools
+  - name: winc-setup
+    release: windows-tools
+  - name: yq
+    release: windows-tools
+releases:
+- name: windows-tools
+  version: latest
+stemcells:
+- alias: windows
+  os: windows2019
+  version: latest
+variables:
+- name: diego_ssh
+  type: ssh
