@@ -1,0 +1,13 @@
+$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
+
+$source=(Get-ChildItem "staticcheck/staticcheck*.tar.gz").FullName
+
+New-Item -Type Directory -Force C:\tmp
+echo "Source: $source"
+tar xzf "$source" -C "C:\tmp" --strip-components=1
+$destination = Join-Path $BOSH_INSTALL_TARGET "staticcheck.exe"
+
+Copy-Item "C:\tmp\staticcheck.exe" $destination
