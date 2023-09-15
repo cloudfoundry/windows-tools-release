@@ -1,0 +1,10 @@
+---
+name: staticcheck
+
+templates:
+    pre-start.ps1: bin/pre-start.ps1
+
+packages:
+- staticcheck
+
+properties: {}

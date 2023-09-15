@@ -1,0 +1,7 @@
+---
+name: staticcheck
+
+dependencies: []
+
+files:
+- staticcheck/staticcheck-*.tar.gz
