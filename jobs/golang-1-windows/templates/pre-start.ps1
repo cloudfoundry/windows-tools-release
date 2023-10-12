@@ -7,7 +7,7 @@ if (!$mtx.WaitOne(300000)) {
   throw "Could not acquire PATH mutex"
 }
 
-$GoRoot='C:\var\vcap\packages\golang-1-windows\go'
+$GoRoot='C:\var\vcap\packages\golang-1.21-windows\go'
 
 $OldPath=(Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).Path
 $AddedFolder="$GoRoot\bin"
