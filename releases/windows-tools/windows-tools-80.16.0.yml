@@ -1,0 +1,325 @@
+name: windows-tools
+version: 80.16.0
+commit_hash: b794f83
+uncommitted_changes: false
+jobs:
+- name: aws
+  version: f3aa56227149646ca3ec76606b9655f4c584387f1265068ea7231da1f2b92e4a
+  fingerprint: f3aa56227149646ca3ec76606b9655f4c584387f1265068ea7231da1f2b92e4a
+  sha1: sha256:ba23fcbc73c95784fe10568e1add2b09b95921327a03f69be60f2f68ee3f2b5b
+  packages:
+  - aws
+- name: az
+  version: a1b142e9dd45b83ce5b93e9c3f8f877a4ce27dcf0ef78f52fbe48dfc4c0a4e56
+  fingerprint: a1b142e9dd45b83ce5b93e9c3f8f877a4ce27dcf0ef78f52fbe48dfc4c0a4e56
+  sha1: sha256:c19154e2d8db4702ecb3d562106185a51e3adae7139dab22499a94aee58db473
+  packages:
+  - az
+- name: bosh-cli-windows
+  version: 2beabbb192f2745d147c4f5389cf77abaa82dbecc1b8b91fed569cd7c3aec937
+  fingerprint: 2beabbb192f2745d147c4f5389cf77abaa82dbecc1b8b91fed569cd7c3aec937
+  sha1: sha256:88b4a38db51f4fb9581c7934de454f112a7bd74d6e477c09443135627b28d3ca
+  packages:
+  - bosh-cli-windows
+- name: cmake
+  version: 716b1e14b662e040383e1a67169435a474883f460bbd02a6205740cd3592eebd
+  fingerprint: 716b1e14b662e040383e1a67169435a474883f460bbd02a6205740cd3592eebd
+  sha1: sha256:1ecfd99f3ceb034096b47cf44dd0969b55caad8bd0d49b27262eeb21135c792a
+  packages:
+  - cmake
+- name: docker
+  version: b7a6ac0591ca5a1bac3b28a46ea33655fdfd79cd54aa0b87f9179521384e99b1
+  fingerprint: b7a6ac0591ca5a1bac3b28a46ea33655fdfd79cd54aa0b87f9179521384e99b1
+  sha1: sha256:90b4af21270610e2994754519ab330d35e7db884fc5d98195bedb89e4df45510
+  packages:
+  - docker
+- name: ephemeral-disk-concourse
+  version: f4db96d2ad43fc42b1cfbcd16671584338b2f11ffb281db47383791e69c45f39
+  fingerprint: f4db96d2ad43fc42b1cfbcd16671584338b2f11ffb281db47383791e69c45f39
+  sha1: sha256:407d7290699ecd21dcf433cba8e6f553356ddafb9b7f773c62d3ad33c21610eb
+  packages: []
+- name: ginkgo
+  version: c2a40f27ff6cf718b0563564d709b4726194dceafc59879bcdf7579dfdfb2580
+  fingerprint: c2a40f27ff6cf718b0563564d709b4726194dceafc59879bcdf7579dfdfb2580
+  sha1: sha256:07a729393ff3ea8c241248d37fa7cf330b59c4dbdef2278c1ea75e2b9f570909
+  packages:
+  - ginkgo
+- name: git
+  version: 277d274388eaed84376329c0e4d1ea297c5d2b67768ffcdd9057163f6e3e4e8e
+  fingerprint: 277d274388eaed84376329c0e4d1ea297c5d2b67768ffcdd9057163f6e3e4e8e
+  sha1: sha256:9e7f39a24dd0b2a9917f5efe83c1de7c8d9a521072a7dd05a66cbc505886f452
+  packages:
+  - git
+- name: golang-1-windows
+  version: 1cfbf2a4cdb201aed1e9d7823f6bbd61e48ff2cfe9ae4c4dab91501afdff66a4
+  fingerprint: 1cfbf2a4cdb201aed1e9d7823f6bbd61e48ff2cfe9ae4c4dab91501afdff66a4
+  sha1: sha256:7b5d3a83eac54c247d1c4605df4b5cc1174892975300e79cdc4e76762eb644f4
+  packages:
+  - golang-1.21-windows
+- name: llvm
+  version: 7b3df25950b7baed42d58bb034b69d6e776d32b5158d016e8374a9b2af7972e6
+  fingerprint: 7b3df25950b7baed42d58bb034b69d6e776d32b5158d016e8374a9b2af7972e6
+  sha1: sha256:f0ec9161fa613e19eb6669383c3583d00ca92e706f4fe5e1f311499b163b99e3
+  packages:
+  - llvm
+- name: make
+  version: a3c09ee4562671428961f48a3b33a68a5a878c3381c1d859d740f6bf728bfc06
+  fingerprint: a3c09ee4562671428961f48a3b33a68a5a878c3381c1d859d740f6bf728bfc06
+  sha1: sha256:12579e4202d1782b7e941ffb68279ff323d7ecb17a455a6d8e71a6a1b574e3ea
+  packages:
+  - make
+- name: mingw32
+  version: 2cf987613e6e93bda6ef2a68a6707603b3c0532c1b3452901443b3a3e565d305
+  fingerprint: 2cf987613e6e93bda6ef2a68a6707603b3c0532c1b3452901443b3a3e565d305
+  sha1: sha256:aa20fcdc02e914b584d4b9a0c2bc60e585cd385d3cee87bdfcdafc9bad44969e
+  packages:
+  - mingw32
+- name: mingw64
+  version: e438d7ff0a5ed7793c0816176bd3990da9ec35634f454f1bf766023dd9fdcbe0
+  fingerprint: e438d7ff0a5ed7793c0816176bd3990da9ec35634f454f1bf766023dd9fdcbe0
+  sha1: sha256:6270a615267a22a90dbcba7914ec0d3e85fd4f4099685acfbabad80dd7fe8bdc
+  packages:
+  - mingw64
+- name: mysql
+  version: f1942bc847ee03c7994d0e574f26054959eeab1b857a4820550a5c6ec4e029dc
+  fingerprint: f1942bc847ee03c7994d0e574f26054959eeab1b857a4820550a5c6ec4e029dc
+  sha1: sha256:dece16f555f69e797236a2a3377d20f43e2b4006e2d397c28ecb850247d42f5f
+  packages:
+  - mysql
+- name: ninja
+  version: 7c07381162a90adc506d65a32c9a0d7194db40e3f6ebefef5e8e11592def95bb
+  fingerprint: 7c07381162a90adc506d65a32c9a0d7194db40e3f6ebefef5e8e11592def95bb
+  sha1: sha256:76349174633b3af642fcf2d34a69fb0d8f0eb4c6d060f2c54ccb05124c84dabd
+  packages:
+  - ninja
+- name: packer
+  version: d15494fbf8222abada65aba8f3871667c56c1eeac0f28769531621845e5dcd86
+  fingerprint: d15494fbf8222abada65aba8f3871667c56c1eeac0f28769531621845e5dcd86
+  sha1: sha256:87bcd9c61987c3ac988dba9194936dfddedd6b888524ac40d5fdb7b4a9d29fc7
+  packages:
+  - packer
+- name: perl64
+  version: a2c1885a83c609fd847c953bf4ab4ab4d5900cf6b19d6895bbacd08ec3002055
+  fingerprint: a2c1885a83c609fd847c953bf4ab4ab4d5900cf6b19d6895bbacd08ec3002055
+  sha1: sha256:78a2c1946fcd69e7caa5a4384b483fbb513b5a78b8bc901d05d844dc539848f0
+  packages:
+  - perl64
+- name: pester
+  version: 059cb90b4b4d6d20b45321973ed3879219cc18e62b2b6a428c990d1a1e127227
+  fingerprint: 059cb90b4b4d6d20b45321973ed3879219cc18e62b2b6a428c990d1a1e127227
+  sha1: sha256:6431540c6f130ebd93f82ddb551389492256a47a6dc129deb5fbb8fb7afd9980
+  packages:
+  - pester
+- name: powershell-profile
+  version: bb19cec2f9307cf2c9554e72ab88dce4fb19567d2b6e5121d948dc6c542c1654
+  fingerprint: bb19cec2f9307cf2c9554e72ab88dce4fb19567d2b6e5121d948dc6c542c1654
+  sha1: sha256:684e187f9c5d7685971f7ceced8d201bb43462f48b4271bb7c1c470a6d3f079f
+  packages: []
+- name: processhacker
+  version: 162cea2a871a4872862be80131f4f553665487397b810626538e7e2242f29f05
+  fingerprint: 162cea2a871a4872862be80131f4f553665487397b810626538e7e2242f29f05
+  sha1: sha256:6bae3d0ae1b1a5c0b6e7b5657e25d657069a6df873290a64acca4c9c8695cb19
+  packages:
+  - processhacker
+- name: python
+  version: d68e37e72a7105c50af4a5a4c4eb3a79fb4c6389fc71a7bb23ea01dbab7147dc
+  fingerprint: d68e37e72a7105c50af4a5a4c4eb3a79fb4c6389fc71a7bb23ea01dbab7147dc
+  sha1: sha256:6b7d7c893662b4cf31235a5142cdd65a847bfb1672ea7c30ec1e38c2809833b0
+  packages:
+  - python
+- name: python3
+  version: e609e924bc25f656671654842cbb093d3762691ae99a9d3c6c9335e38bedb55d
+  fingerprint: e609e924bc25f656671654842cbb093d3762691ae99a9d3c6c9335e38bedb55d
+  sha1: sha256:b8e3ba17ed11a65c596dda63355ff765fd7fb724cf5c99974ad08ef630441f00
+  packages:
+  - python3
+- name: ruby
+  version: 0702fdaebb06edf0ecd586a78c81ef1911c84d75ca906530aa9042a4ecf139c3
+  fingerprint: 0702fdaebb06edf0ecd586a78c81ef1911c84d75ca906530aa9042a4ecf139c3
+  sha1: sha256:097668c7c9d2ded89c63edf773e36bd58ab5926aaf3302f09d6c8c5555613ffb
+  packages:
+  - ruby
+- name: setup-persistent-disk-store
+  version: 0f423971bb49baf504a9765bf4af97061fd6902a6ee5f30345ef174a33641050
+  fingerprint: 0f423971bb49baf504a9765bf4af97061fd6902a6ee5f30345ef174a33641050
+  sha1: sha256:34f7e98502f6e2b2c9535784454f225baad123f99c9ed9901d2cbf13dbda89b6
+  packages: []
+- name: smb-share
+  version: 9c9d3f8c057d7bbd319a0a588d9c555d3f558b3e4bf2860aafd3716c4ce202de
+  fingerprint: 9c9d3f8c057d7bbd319a0a588d9c555d3f558b3e4bf2860aafd3716c4ce202de
+  sha1: sha256:ec33ef9096034222ccb5b78ce00b951dedd4a7fba0b4354356454a1584fa8269
+  packages: []
+- name: staticcheck
+  version: d6700517c9f0fa506b338523fc8916b48858fad75cc31dcdbedb40ba4e969320
+  fingerprint: d6700517c9f0fa506b338523fc8916b48858fad75cc31dcdbedb40ba4e969320
+  sha1: sha256:ac33b91d0b77501fd6fdae0e7857886a8effe2a0552e406bb97d46a8ca1b6d63
+  packages:
+  - staticcheck
+- name: vc_redist
+  version: e766f2266478ebb9a7d588d7361bd72321b06ddc083e2d40a063dc2673045d85
+  fingerprint: e766f2266478ebb9a7d588d7361bd72321b06ddc083e2d40a063dc2673045d85
+  sha1: sha256:bf10c37687f45dbc00dc742b9fa7b5aff8c4477033c1d9adf921b69ef7df98bb
+  packages:
+  - vc_redist
+- name: vim
+  version: be4e1f354bec82a986d8c671ee6e4c546cccf4d93d590504a9c3e4ae2f5f3bff
+  fingerprint: be4e1f354bec82a986d8c671ee6e4c546cccf4d93d590504a9c3e4ae2f5f3bff
+  sha1: sha256:a83751dac0989a5cf9de95e980f04b423126f4aa0cf3ac3e4abf654def55b74e
+  packages:
+  - vim
+- name: winc-setup
+  version: 17678a0f1b06e0be86b6e36f2493e6a343744794627101fa4cbd80b556f872f1
+  fingerprint: 17678a0f1b06e0be86b6e36f2493e6a343744794627101fa4cbd80b556f872f1
+  sha1: sha256:3835bcdc1461590a4f13a2dcb6e9db06fd42a3a61db04dd6a3cd385594d8b2a7
+  packages:
+  - golang-1.21-windows
+  - git
+  - mingw64
+- name: yq
+  version: 18ccf3a0f3253c5fd9099f00203094178c76cd8ed4d8b65de9c679b61f4c73e4
+  fingerprint: 18ccf3a0f3253c5fd9099f00203094178c76cd8ed4d8b65de9c679b61f4c73e4
+  sha1: sha256:ae889a279c00a87b36393b0a21efd447896e19e3785b9e430844b6cfa4d45777
+  packages:
+  - yq
+packages:
+- name: 7zip
+  version: a836729ad83534cc22df09ef86b5bfa594600679cfc7d88643f14e490d1e8e92
+  fingerprint: a836729ad83534cc22df09ef86b5bfa594600679cfc7d88643f14e490d1e8e92
+  sha1: sha256:9581e9e5a01f08f0978704c9717dc3758ba918966ab244e070c68ceb63aa2238
+  dependencies: []
+- name: aws
+  version: 6da94d2d20e6dfb3ddd818213ade254f63b28a31d5f46709aca4f4463428856a
+  fingerprint: 6da94d2d20e6dfb3ddd818213ade254f63b28a31d5f46709aca4f4463428856a
+  sha1: sha256:65215b29c7d58aebef09bd83b2aaa29c9a0baf6634b7ed138e1cf20efccf7f6f
+  dependencies: []
+- name: az
+  version: a9f148e5f842182c34dbc791c82d8a197c9e14a1654323ba8edeb8767160e193
+  fingerprint: a9f148e5f842182c34dbc791c82d8a197c9e14a1654323ba8edeb8767160e193
+  sha1: sha256:b6356812de1e95b61eef234c8726ab7147281789bf2e3591a20726e8b83d8887
+  dependencies: []
+- name: bosh-cli-windows
+  version: c1cf8657ffedfbe272a577a7a3a194a3b6e58115420f72a5d947766160b8d49f
+  fingerprint: c1cf8657ffedfbe272a577a7a3a194a3b6e58115420f72a5d947766160b8d49f
+  sha1: sha256:b8c5fa1cc4fb1d7ff91ee9f2cbdb43f665199c86359625eb5429c56bee41b94d
+  dependencies: []
+- name: cmake
+  version: e8bce90235a71b7a9610181ca6fcca444c6e565b26d7baf40e8223761f2573d5
+  fingerprint: e8bce90235a71b7a9610181ca6fcca444c6e565b26d7baf40e8223761f2573d5
+  sha1: sha256:b2edb8dad0ef85b2abc6b94bce9e08f722c42fa1e7f36d14457abf3016c3beef
+  dependencies: []
+- name: docker
+  version: 3d411bc1ac7858bfde929423f2317c64123e3494ff5e91813842420355c5566e
+  fingerprint: 3d411bc1ac7858bfde929423f2317c64123e3494ff5e91813842420355c5566e
+  sha1: sha256:115c3f08d6c0f66356b4b8ae2f249eac22281e45664783792f1b0dbf6fc21d9b
+  dependencies: []
+- name: ginkgo
+  version: 31dfd559251d950a838be9a70ff63c1cd805b06291ae6599b260afc2b0492ed3
+  fingerprint: 31dfd559251d950a838be9a70ff63c1cd805b06291ae6599b260afc2b0492ed3
+  sha1: sha256:247ff65f636426f973bde56b8722e3bc08f655c9dfc5650f9498f001e75f7fff
+  dependencies: []
+- name: git
+  version: b7d90213a5aa9c49670f40213796f2329517575477bc4f622f788de9ab85c0a0
+  fingerprint: b7d90213a5aa9c49670f40213796f2329517575477bc4f622f788de9ab85c0a0
+  sha1: sha256:a8d3181786967bfcd3e12090635ec66d2a281e3aff64e9fe3cfea1e9dd9d3ccb
+  dependencies: []
+- name: go-dep
+  version: 279907cb76490ef3b6787aecfd7e2a2c7866300e3bb2533914db01c292a90766
+  fingerprint: 279907cb76490ef3b6787aecfd7e2a2c7866300e3bb2533914db01c292a90766
+  sha1: sha256:2549cb0928d7cd93488773625aa2217a5da3aa5a5e039516f7ae596253854e08
+  dependencies: []
+- name: golang-1.21-windows
+  version: e8a62e63901f7401daa78b4399c93611efe1f9711c97f7cd2762ad584f66469c
+  fingerprint: e8a62e63901f7401daa78b4399c93611efe1f9711c97f7cd2762ad584f66469c
+  sha1: sha256:151f405072dfe605c7853f38cc33df8099df97674ae4022b67d8f4fb1af673eb
+  dependencies: []
+- name: llvm
+  version: 61bf4a53d993082bef04ccacaaedbb7906272d330f0f5306ebde9988fd5fab92
+  fingerprint: 61bf4a53d993082bef04ccacaaedbb7906272d330f0f5306ebde9988fd5fab92
+  sha1: sha256:6cfbb701fba3efe8d9753b01545e5c5139864b3f392ef2eebaefdc338d952e78
+  dependencies: []
+- name: make
+  version: d6fad01375a7b76b01760e41a7f301324671064d1d22a4e17825c69df6fe2b02
+  fingerprint: d6fad01375a7b76b01760e41a7f301324671064d1d22a4e17825c69df6fe2b02
+  sha1: sha256:a398ac85dd0dc1763a9a7c4484367676f7d9c24ce14db32a8a9f4bf29b189ae3
+  dependencies: []
+- name: mingw32
+  version: 3233f1e0a69cebadab13d73cf5ffde5820f1543067669439e31a557096814ecd
+  fingerprint: 3233f1e0a69cebadab13d73cf5ffde5820f1543067669439e31a557096814ecd
+  sha1: sha256:85666befcd0320289946cf48e43fbd4f5ef7b714245d5c1650bc68678cdb18c5
+  dependencies:
+  - 7zip
+- name: mingw64
+  version: 7f658907c47f25ad464a186e23992d3fbedb6047b9358f3f0a9565ec4ecdbdea
+  fingerprint: 7f658907c47f25ad464a186e23992d3fbedb6047b9358f3f0a9565ec4ecdbdea
+  sha1: sha256:f100d9ddd8e62e785f2ffaafe51182b28aca1d789f4ba755e10ad4d972794c56
+  dependencies:
+  - 7zip
+- name: mysql
+  version: cce6ee1580efb27b82edd1e09f0f917e0d1df38574393f4cb17322bf2d97ce31
+  fingerprint: cce6ee1580efb27b82edd1e09f0f917e0d1df38574393f4cb17322bf2d97ce31
+  sha1: sha256:5ed3c56ff86cb132bd940cae39ab3529685179035fd73f4b991a29ef2f8f9854
+  dependencies: []
+- name: ninja
+  version: 051890a2bbc200934ddbb9ff5885b3022cd6253d1a1df55f45148e31d1eed42d
+  fingerprint: 051890a2bbc200934ddbb9ff5885b3022cd6253d1a1df55f45148e31d1eed42d
+  sha1: sha256:20c37198f84e4abceadea363ac7b07f0fec78959a6e2b6a139ccb0e732453549
+  dependencies: []
+- name: packer
+  version: 6ab4827508e1c9273efc3e991236dac4bc875da6ee03a6751ac9c475de764d12
+  fingerprint: 6ab4827508e1c9273efc3e991236dac4bc875da6ee03a6751ac9c475de764d12
+  sha1: sha256:2015fc78784b2046feac2f61e22f1a626a13a0c493e425fc9e0e58a4b66e603c
+  dependencies: []
+- name: perl64
+  version: 3f02ac4349dc9011d570a5f44d227518dcbd976b8d95e8b1b188da77b49615bc
+  fingerprint: 3f02ac4349dc9011d570a5f44d227518dcbd976b8d95e8b1b188da77b49615bc
+  sha1: sha256:3776f701bd6c1c9114beeed1e4b7c6408c1ccd8c1935a012843dfa7b9686213c
+  dependencies: []
+- name: pester
+  version: 588171ff027e86b6c0559d27f98b4f8eab4ffff704ae0e8845d9de1f9f8210ad
+  fingerprint: 588171ff027e86b6c0559d27f98b4f8eab4ffff704ae0e8845d9de1f9f8210ad
+  sha1: sha256:f0d6144655bd8a454e64ac14cb082ac1a824bb02b6c446470189f37f7a5f1f25
+  dependencies: []
+- name: processhacker
+  version: d98d5001c40bfba75aae2dd081dd46aa772403e906448774be6381464be9c44f
+  fingerprint: d98d5001c40bfba75aae2dd081dd46aa772403e906448774be6381464be9c44f
+  sha1: sha256:72b51ee18f8b424e98f8b323616f8456b9de5ecc57721a9de7b9f621b9151b79
+  dependencies: []
+- name: python
+  version: 86af14f61b77267cba2095f6474070b6c65f581ca5dff32e48496fa8ba3ec476
+  fingerprint: 86af14f61b77267cba2095f6474070b6c65f581ca5dff32e48496fa8ba3ec476
+  sha1: sha256:2f087d0e0fb065ebcfdb4c1cce4db74e7311dfca4a48c14465526dc50f567d08
+  dependencies: []
+- name: python3
+  version: ba1b57fa1b7d98a7cbccf933b2847a2ac3e1af19dea2039de19083f48cf0df09
+  fingerprint: ba1b57fa1b7d98a7cbccf933b2847a2ac3e1af19dea2039de19083f48cf0df09
+  sha1: sha256:3afb1e50622db7d9a5cf377bfc624c351ea152dbd31b1c6a73527ac12dddb9a1
+  dependencies: []
+- name: ruby
+  version: f8cdff048c0c8a6070c905acd8ea27876ffca001f46cf7a44b0a2af65a80fbfe
+  fingerprint: f8cdff048c0c8a6070c905acd8ea27876ffca001f46cf7a44b0a2af65a80fbfe
+  sha1: sha256:22c5f86ebc156ff38828396e18346afbf304417e3b314f0dd865e8967e9d0524
+  dependencies: []
+- name: staticcheck
+  version: f806f6b17bd65a44ed463550da911ac73677dfb4b2ff8d7a4332ed294d226ff0
+  fingerprint: f806f6b17bd65a44ed463550da911ac73677dfb4b2ff8d7a4332ed294d226ff0
+  sha1: sha256:924a27eedad7f7371cb53152a88714c8b0ce684914802503de28962850d1fdda
+  dependencies: []
+- name: vc_redist
+  version: 4ebc3e9fe1023169f524f051fe740dd68bf361067d34d7575dcaa28cf2fc0122
+  fingerprint: 4ebc3e9fe1023169f524f051fe740dd68bf361067d34d7575dcaa28cf2fc0122
+  sha1: sha256:a71c6c6bbe66ff2f91a1e12b9e9a817ec3294c0a1c3c72294b968c9298cf12b2
+  dependencies: []
+- name: vim
+  version: 42f48fd46a39298e18a090f042b67c38bbc34e0349da9ebc293f0b55eaf26667
+  fingerprint: 42f48fd46a39298e18a090f042b67c38bbc34e0349da9ebc293f0b55eaf26667
+  sha1: sha256:41424c1f47ffad46a49cfb04b446119572f063922ca1f2cde195a857dd401738
+  dependencies: []
+- name: yq
+  version: 987ece48472afc434b48c11fd23da94c1b042292350aec913d18fa32f790dac1
+  fingerprint: 987ece48472afc434b48c11fd23da94c1b042292350aec913d18fa32f790dac1
+  sha1: sha256:0dbfbbede2146ea37e243b27a5c6332c1974be8828cdc2e50e78816bc537b8ff
+  dependencies: []
+license:
+  version: fd58e8b5474cfd11d7f53271790c2721cbc5031425ca55e89768d707fa006abc
+  fingerprint: fd58e8b5474cfd11d7f53271790c2721cbc5031425ca55e89768d707fa006abc
+  sha1: sha256:d5c3de243fc2ff5a094b8d54ea58c98180ec39c4824356b5964c220af2f4d55c

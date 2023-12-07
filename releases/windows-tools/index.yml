@@ -151,6 +151,8 @@ builds:
     version: "75"
   c53a7e03-7991-4508-613e-5a88ce8c67bf:
     version: "38"
+  c86834b0-921d-4a1d-5b68-f461e893cfd1:
+    version: 80.16.0
   c87f345e-68e8-4210-468d-bc97b63d2d8b:
     version: 80.13.0
   cd03d42b-e038-4fef-4d6a-0f53fb9d7c4c:
