@@ -5,7 +5,7 @@ templates:
     post-deploy.ps1.erb: bin/post-deploy.ps1
 
 packages:
-- golang-1.21-windows
+- golang-1.22-windows
 - git
 - mingw64
 
