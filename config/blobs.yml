@@ -94,10 +94,6 @@ vc_redist/vc_redist-1ad7988c17663cc742b01bef1a6df2ed1741173009579ad50a94434e54f5
   size: 25170392
   object_id: d57456fe-3908-4239-5ac9-8d18cdaca941
   sha: sha256:67097d58be29f4dfd250711ec11c09c11577e233ec14c984291c14ac5088dea9
-vc_redist/vc_redist141.zip:
-  size: 14818023
-  object_id: b32bdeab-d474-44ac-46f8-98de811fff08
-  sha: sha256:cac84992ab2148009a021e31a9f0b50206b8f20e04f13a1d4c897534028a1b09
 winpty.tgz:
   size: 460765
   object_id: 04aa0cfd-9b12-47b9-4c79-a34990e29802
