@@ -50,10 +50,10 @@ mingw/i686-13.1.0-release-win32-dwarf-ucrt-rt_v11-rev1.7z:
   size: 76208605
   object_id: 1bf3a259-be67-469f-5f1f-d9f28414e462
   sha: sha256:239b97cede799e598460e25c1334709260d57193f001ea7cfb6c85be6572ebfc
-mingw/x86_64-13.1.0-release-posix-seh-ucrt-rt_v11-rev1.7z:
-  size: 72231676
-  object_id: f2ab61fe-ad86-4f48-439e-884e2b385154
-  sha: sha256:da69a72f8f7e021a738b5beb45c08398cc042cca8f8573d0f2ae263e65f5752a
+mingw/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1.7z:
+  size: 85992859
+  object_id: a640a93a-b1d6-4d02-7f7a-e6ace23e9db2
+  sha: sha256:475ee72c5ce1bd54a3e3c334bdd3be5e6575334184fd9718013aa362c9819d2f
 ninja/ninja-win-v1.8.2.zip:
   size: 247692
   object_id: 1e8cf81e-3caa-4311-440a-86ee923bd87a
