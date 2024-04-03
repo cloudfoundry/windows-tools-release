@@ -14,16 +14,10 @@ bosh-cli/bosh-cli-7.5.5-windows-amd64.exe:
   size: 43849728
   object_id: 4034b80e-10fd-4f6d-73f7-13bee98303e1
   sha: sha256:b7910695e9a1046f729a230b86964d3dbe886c87385dafc7eaed0fd23d2d9932
-cmake/cmake-3.29.0-windows-x86_64.zip:
-  size: 45739138
-  sha: sha256:9ab28eba1ab7911a0e57ab274f5990a283fffa1d22eb711792d5562e5869f9ef
 docker/docker-18-09-0.zip:
   size: 35556399
   object_id: 73880146-3c89-4268-5ef5-01a2ad21e376
   sha: 78c90fb79cef78fec167f0f48eb598ec6c80a4b7
-ginkgo/ginkgo-v2.17.1.exe:
-  size: 657696
-  sha: sha256:77f3e543560974b8debfa68b2b820d093339a94674bfa3caa2710c24d787e6e8
 git/Git-2.44.0-64-bit.exe:
   size: 65350776
   object_id: e2f259eb-602e-40d5-4569-8064bdb4b625
@@ -96,6 +90,3 @@ winpty.tgz:
   size: 460765
   object_id: 04aa0cfd-9b12-47b9-4c79-a34990e29802
   sha: 6bfe1962c47f10c1081410982d06b6eefaeb231c
-yq/yq-4.43.1-windows-amd64.exe:
-  size: 10349568
-  sha: sha256:cb7be6553742a8afdd701c760bf86db4c487b083fe18658b70bf2fba242c64b7
