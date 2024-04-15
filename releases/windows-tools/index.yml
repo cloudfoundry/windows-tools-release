@@ -127,6 +127,8 @@ builds:
     version: "57"
   aa3a8bc0-0fbe-47f4-5e09-89efb19aa9f5:
     version: 80.6.0
+  aa6538a2-e5c3-43a3-7a7f-2aaf08306cde:
+    version: 80.19.0
   ab633253-cc77-4bae-55b1-c8bb7ee17f6a:
     version: "20"
   af7f15e5-60a7-4b50-6f89-f77d8ecf4496:
