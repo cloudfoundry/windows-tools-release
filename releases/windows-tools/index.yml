@@ -5,6 +5,8 @@ builds:
     version: "39"
   08dcc095-2f30-4be4-57b4-72bec5c7824c:
     version: "64"
+  09415c42-f5b0-40d7-55b2-8128810d0fcc:
+    version: 80.20.0
   0f72ec36-01dd-4a49-657c-0830a33d3ae6:
     version: "28"
   12cb7428-d776-43fd-7eab-c3eebb548461:
