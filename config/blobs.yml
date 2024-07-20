@@ -90,10 +90,10 @@ staticcheck/staticcheck-2023.1.7-windows-amd64.tar.gz:
   size: 7558453
   object_id: 1e4c0b24-28b4-4853-7272-12c65deb31f6
   sha: sha256:7fc2618493381208ac8c324a0b34449edfe24d00aa7351c331f230e0e0c195f9
-vc_redist/vc_redist-3642e3f95d50cc193e4b5a0b0ffbf7fe2c08801517758b4c8aeb7105a091208a.zip:
-  size: 25151876
-  object_id: 87a3dfe6-b531-4799-441b-431e3ec35edb
-  sha: sha256:6d254c35c584dab7c6b2e26bd4ff79344e96f5dd03babe94f9922cc9a3ab0b57
+vc_redist/vc_redist-ed8621944f138bc86457555141b10b2d6ade257550d54d8a501a2719e15b3802.zip:
+  size: 40816
+  object_id: 7114e40b-2434-4156-4159-9725a442e355
+  sha: sha256:d6ef684cecf82bd226308b1cd983be08d20d15b9f6747674d33a6f6c48cdd0e9
 winpty.tgz:
   size: 460765
   object_id: 04aa0cfd-9b12-47b9-4c79-a34990e29802
