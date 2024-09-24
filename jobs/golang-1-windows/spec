@@ -5,6 +5,6 @@ templates:
   pre-start.ps1: bin/pre-start.ps1
 
 packages:
-- golang-1.22-windows
+- golang-1.23-windows
 
 properties: {}
