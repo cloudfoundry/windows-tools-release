@@ -195,6 +195,8 @@ builds:
     version: "7"
   e1e34c12-01d8-4b0c-6b02-8e4ddf4da53c:
     version: "10"
+  e920a9a0-d6a1-4353-728f-99f34558787c:
+    version: 80.28.0
   eeb4769c-b290-4e0a-75f7-b288317f26ed:
     version: "42"
   eec49079-4a5e-4454-57ad-b4217fe6b667:
