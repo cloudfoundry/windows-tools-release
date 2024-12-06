@@ -20,6 +20,7 @@ cmake/cmake-3.31.2-windows-x86_64.zip:
   sha: sha256:109c29a744d648863d3637b4963c90088045c8d92799c68c9b9d8713407776c8
 docker/docker-27.3.1.zip:
   size: 39576554
+  object_id: a00de791-43b1-4a87-63ab-ad77e3a86e0b
   sha: sha256:f2b36fcee7fd6d0b8f7d04dcf5d415d2745b212f0847946034ad989bb99e0382
 ginkgo/ginkgo-v2.22.0.exe:
   size: 741246
