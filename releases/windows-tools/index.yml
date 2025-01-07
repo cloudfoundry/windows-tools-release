@@ -215,6 +215,8 @@ builds:
     version: "60"
   f1770e5a-8d74-44fd-77e1-1b5b39f8ec14:
     version: "41"
+  f3e23363-67c1-4dba-62b3-7b64abdde340:
+    version: 80.36.0
   f4a0b843-2a1f-4f17-5c28-d9595c06b606:
     version: 80.34.0
   f78def6b-cfa4-4b76-67f3-599df07f479a:
