@@ -2,7 +2,7 @@
 trap { $host.SetShouldExit(1) }
 
 $OldPath=(Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).Path
-$AddedFolder="C:\var\vcap\packages\vim\vim_unzipped\vim\vim81"
+$AddedFolder="C:\var\vcap\packages\vim\vim_unzipped\vim\vim91"
 
 if (-not $OldPath.Contains($AddedFolder)) {
   $NewPath=$OldPath+';'+$AddedFolder
