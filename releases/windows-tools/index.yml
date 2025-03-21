@@ -131,6 +131,8 @@ builds:
     version: "46"
   892a5444-6a7a-41d5-576e-6fbe7a1b9efd:
     version: 80.42.0
+  8ddaaf42-9d89-44b3-71dc-127de27f4337:
+    version: 80.44.0
   8f2bd9e8-3139-4922-5637-7d1a95ea6ccf:
     version: 80.17.0
   91bef5b7-2257-4c19-630a-c25f975b0706:
