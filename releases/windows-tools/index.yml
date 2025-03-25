@@ -3,6 +3,8 @@ builds:
     version: 80.2.0
   03979a21-6c3b-49bf-4d70-f50821ab5188:
     version: 80.30.0
+  068996c0-e55f-4871-57e7-b63c31214bc9:
+    version: 80.45.0
   08d0032e-1cca-4e85-7015-49c6059c4cb3:
     version: "39"
   08dcc095-2f30-4be4-57b4-72bec5c7824c:
