@@ -46,10 +46,10 @@ make/make-3.81-bin.zip:
   size: 495645
   object_id: 4dc3c974-bd26-482e-74ed-dfe774444320
   sha: 7c1e23a93e6cb78975f36efd22d598241b1f0e8b
-mingw/i686-14.2.0-release-win32-dwarf-ucrt-rt_v12-rev1.7z:
-  size: 93745102
-  object_id: fbb6934e-c02d-4d96-4d74-0c9ebae456e9
-  sha: sha256:2725f379df344b8fb7b4c7424431085913a61a341077c256084a70a220193b50
+mingw/i686-14.2.0-release-win32-dwarf-ucrt-rt_v12-rev2.7z:
+  size: 95444195
+  object_id: e4da0add-a5d9-4c0c-670c-b66684789863
+  sha: sha256:f0c5183c3515ed28f6849c444aaa38bb229ebd5b664014eb5bf2d424e9521b77
 mingw/x86_64-14.2.0-release-posix-seh-ucrt-rt_v12-rev2.7z:
   size: 91518830
   object_id: abdea88f-f142-49bd-59de-5a6de7a76689
