@@ -247,4 +247,6 @@ builds:
     version: 80.7.0
   fc856e8b-5c30-449b-7830-96fc2947eac6:
     version: "61"
+  ffde196e-4d29-4727-4193-a9a4be2b6b6c:
+    version: 80.48.0
 format-version: "2"
