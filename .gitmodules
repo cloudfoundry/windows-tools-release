@@ -7,6 +7,3 @@
 [submodule "src/code.cloudfoundry.org/diego-ssh"]
 	path = src/code.cloudfoundry.org/diego-ssh
 	url = https://github.com/cloudfoundry/diego-ssh.git
-[submodule "src/github.com/cloudfoundry/hydrator"]
-	path = src/code.cloudfoundry.org/hydrator
-	url = https://github.com/cloudfoundry/hydrator.git
