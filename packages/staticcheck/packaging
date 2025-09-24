@@ -3,7 +3,7 @@ trap { $host.SetShouldExit(1) }
 
 $BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
 
-$source=(Get-ChildItem "staticcheck/staticcheck*.tar.gz").FullName
+$source=(Get-ChildItem "staticcheck/staticcheck*.exe").FullName
 echo "Source: $source"
-$destination = Join-Path $BOSH_INSTALL_TARGET "ginkgo.exe"
+$destination = Join-Path $BOSH_INSTALL_TARGET "staticcheck.exe"
 Copy-Item $source $destination
