@@ -15,6 +15,5 @@ version_range="${1:?Please provide the start and end versions you want to genera
 local_start_ref=$(get_start_ref_from_range "${version_range}")
 local_end_ref=$(get_end_ref_from_range "${version_range}")
 
-get_non_bot_commits "${local_start_ref}" "${local_end_ref}"
-echo ""
+display_non_bot_commits "${local_start_ref}" "${local_end_ref}"
 display_blob_change_info "${local_start_ref}" "${local_end_ref}" config/blobs.yml
