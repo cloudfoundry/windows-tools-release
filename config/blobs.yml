@@ -98,7 +98,7 @@ winpty.tgz:
   size: 460765
   object_id: 04aa0cfd-9b12-47b9-4c79-a34990e29802
   sha: 6bfe1962c47f10c1081410982d06b6eefaeb231c
-yq/yq-4.48.2-windows-amd64.exe:
-  size: 11933696
-  object_id: aebb0d11-c7c0-4d86-4a1e-9446c1e36a51
-  sha: sha256:a8a35756ccb565845868504f33a4c0e2b4f4f7c7acee42c0abb3e4f86588e6ee
+yq/yq-4.49.1-windows-amd64.exe:
+  size: 11936768
+  object_id: b76d326a-2fc1-4525-678c-b5ecf9ec9f9c
+  sha: sha256:c26d773215c36a5c9ec51ac61299756a1728dc69b279a7ef0e3b8ee2c9da933f
