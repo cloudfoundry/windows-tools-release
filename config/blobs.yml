@@ -10,10 +10,10 @@ az/azure-cli-2.0.49.msi:
   size: 41275392
   object_id: 709f4f77-aa77-4c35-6c05-a2c7304af1d8
   sha: f39a65c02a89e46f507004fdfe14729da4f03232
-bosh-cli/bosh-cli-7.9.14-windows-amd64.exe:
-  size: 66149888
-  object_id: 01976479-125c-4471-5431-e3afb027450f
-  sha: sha256:5f46ec10d8eb6b8fc90d9c46589356bc1f9e5894b9b062ac1a9f816e63f6a53c
+bosh-cli/bosh-cli-7.9.15-windows-amd64.exe:
+  size: 66162688
+  object_id: 9363ef97-d0c1-4c01-69bc-66c75108049a
+  sha: sha256:ffaa9128c47f3941198760473e427bf120aaeb513c06a244c39b28ca7d423e45
 cmake/cmake-4.2.0-windows-x86_64.zip:
   size: 50377806
   object_id: 36f42ad9-d27c-4acc-5e4a-6f2785a95477
