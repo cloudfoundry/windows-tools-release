@@ -14,10 +14,10 @@ bosh-cli/bosh-cli-7.9.16-windows-amd64.exe:
   size: 66275328
   object_id: 8d15269f-cdd3-4687-6e01-6d1c26d9a2fb
   sha: sha256:2643ca083e5b07469399e301dc4335fcb9a4a651d94f45c7466d3cd376684dae
-cmake/cmake-4.2.2-windows-x86_64.zip:
-  size: 50393838
-  object_id: d15c725d-1c54-44d7-506e-e0eba81acf37
-  sha: sha256:b71b3515bbba0b9b0e05852a3bcb82af548579fdcd6ba7a23f8608518c44bdde
+cmake/cmake-4.2.3-windows-x86_64.zip:
+  size: 50391842
+  object_id: d0935f92-6515-4818-53f4-71b47417af87
+  sha: sha256:eb4ebf5155dbb05436d675706b2a08189430df58904257ae5e91bcba4c86933c
 docker/docker-27.3.1.zip:
   size: 39576554
   object_id: a00de791-43b1-4a87-63ab-ad77e3a86e0b
