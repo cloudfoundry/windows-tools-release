@@ -175,6 +175,8 @@ builds:
     version: "2"
   a12a3572-00a4-48ee-70bd-b6711ee7c7a0:
     version: 80.54.0
+  a24de9e9-aebe-4e10-4dbe-801107325cb8:
+    version: 80.65.0
   a295be0a-2479-44e8-71e4-5c97665145b2:
     version: "3"
   a3e35770-3d8a-4fb4-7046-f2f0630c7dbf:
