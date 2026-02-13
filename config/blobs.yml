@@ -86,10 +86,10 @@ ruby/ruby-2.5.1-2-x64.exe:
   size: 9185037
   object_id: 9449ffbf-dbe9-48dc-5e25-2b5228c6c1f0
   sha: 225559ef6a0340859dbc801587506a5280019a30
-staticcheck/staticcheck-go1.25.7-2025.1.1-windows-amd64.exe:
-  size: 15303680
-  object_id: 3da333d2-3d17-4fca-6c38-9dcfe800fe90
-  sha: sha256:1e6bcb105684adf762a35b256c5f46d2979b12f6350213a2f10b077b33bbef2d
+staticcheck/staticcheck-go1.25.7-2026.1-windows-amd64.exe:
+  size: 16060416
+  object_id: 27358f51-5ca5-480d-4e03-39f5108f7f7d
+  sha: sha256:4fdd86a4a61e762c27ee72dcc2c140822f1246d55e8b864dc1a0b289d4e686db
 vc_redist/vc_redist-cc0ff0eb1dc3f5188ae6300faef32bf5beeba4bdd6e8e445a9184072096b713b.zip:
   size: 25382616
   object_id: 598d635b-f09f-42d8-5738-1dc14b4bf37a
