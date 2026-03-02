@@ -26,10 +26,10 @@ ginkgo/ginkgo-v2.28.1.exe:
   size: 855518
   object_id: f885ab08-fd36-4eb3-782a-d374b6aa2ed0
   sha: sha256:332eff7958a50e7f247ae21c104849a969c8da4ffffdb2456478596f0926228d
-git/Git-2.53.0-64-bit.exe:
-  size: 64573288
-  object_id: d7001169-4f6d-4025-705b-60cfe07682fb
-  sha: sha256:3b4e1b127dbebea2931f2ae9dfafa0c2343a488a1222009debfe78d5d335e6a9
+git/Git-2.52.0-64-bit.exe:
+  size: 66292520
+  object_id: 1895da78-eecf-41ef-641f-733b37c55016
+  sha: sha256:d8de7a3152266c8bb13577eab850ea1df6dccf8c2aa48be5b4a1c58b7190d62c
 go-dep/dep-windows-amd64-0.5.4.exe:
   size: 11040256
   object_id: e2ff5f72-95d9-40e2-61ce-22d32bc81afd
