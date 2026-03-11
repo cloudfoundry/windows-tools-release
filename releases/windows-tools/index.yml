@@ -13,6 +13,8 @@ builds:
     version: "64"
   09415c42-f5b0-40d7-55b2-8128810d0fcc:
     version: 80.20.0
+  0c5aab81-bb36-41c3-4af9-53ca92e156d1:
+    version: 80.72.0
   0f72ec36-01dd-4a49-657c-0830a33d3ae6:
     version: "28"
   0fd18ce3-d468-4722-6fa9-809920761c17:
