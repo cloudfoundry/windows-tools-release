@@ -22,6 +22,7 @@ $iniFileDest="$dest\my.ini"
 basedir=${dest}
 datadir=C:\\var\\vcap\\data\\mysql
 port=3306
+mysql_native_password=ON
 "@ | Out-File $iniFileDest -Force -Encoding ASCII
 
 
