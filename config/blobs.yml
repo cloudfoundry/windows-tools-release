@@ -30,6 +30,10 @@ git/Git-2.54.0-64-bit.exe:
   size: 65175776
   object_id: 29d27140-434a-4237-78ac-020394f3ce96
   sha: sha256:2b96e7854f0520f0f6b709c21041d9801b1be44d5e1a0d9fa621b2fbc40f1983
+git/MinGit-2.54.0-64-bit.zip:
+  size: 39989839
+  object_id: 33736143-02fe-4ef2-6b3a-c8acf97d9440
+  sha: sha256:04f937e1f0918b17b9be6f2294cb2bb66e96e1d9832d1c298e2de088a1d0e668
 go-dep/dep-windows-amd64-0.5.4.exe:
   size: 11040256
   object_id: e2ff5f72-95d9-40e2-61ce-22d32bc81afd
