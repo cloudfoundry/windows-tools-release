@@ -94,10 +94,10 @@ staticcheck/staticcheck-go1.27.1-2026.2.1-windows-amd64.exe:
   size: 17328128
   object_id: 0fb88197-a083-43d3-62a8-a4be04d15c94
   sha: sha256:e1e7f3c9665a66d22b33112f750fa48dc792aad4e846d932ad26e88ffab5e6e0
-vc_redist/vc_redist-4a05d6bfe88fe88dc6fb2fd140510fbadaba6f4253e861d40636eb490105340f.zip:
-  size: 24328
-  object_id: f32ceb70-9f66-4e98-6781-2a665f50c5ef
-  sha: sha256:ce956bab47098a633a8766f4e55eaae5438d45d0da8f28b35ea5a817ba15a8d5
+vc_redist/vc_redist-cc0ff0eb1dc3f5188ae6300faef32bf5beeba4bdd6e8e445a9184072096b713b.zip:
+  size: 25382616
+  object_id: ce3a706e-13a9-4bb5-54fa-45b2dbce754b
+  sha: sha256:2efadd34ea8c49725b700968023014a989d4ca8b55da5af6deef613708dffe53
 winpty.tgz:
   size: 460765
   object_id: 04aa0cfd-9b12-47b9-4c79-a34990e29802
